@@ -7,8 +7,36 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+.profile-picture-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+}
+
+.profile-image {
+	width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .icons {
 	margin: 0em 0em 0em 2em;
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar-section-buttons {
+    margin: 0em 0em 0em 58em;
+	display: flex;
+	width: 500px;
+}
+
+.nav-link {
+	margin: 1rem;
 }
 
 .bio {
@@ -17,21 +45,22 @@
 
 .custom-navbar {
 	display: flex!important;
-	align-items: center!important;
+	justify-content: space-between!important;
 	z-index: 1000;
 	background-color: lightgrey!important;
+	padding: 0 50px;
 }
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-	}
+	} */
 .image.fit img {
 	width: 100%;
 	height: auto;
@@ -861,7 +890,8 @@
 		ul.actions {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
+			padding: 2rem 0 0 0;
+			text-align: left;
 		}
 
 			ul.actions li {
@@ -1485,10 +1515,11 @@
 /* skills */
 
 	#skills {
+		display: inline-block;
 		padding: 4em 4em 2em 4em;
 		background-color: #ffffff;
 		border-radius: 4px;
-		text-align: center;
+		text-align: left;
 	}
 
 		@media screen and (max-width: 736px) {

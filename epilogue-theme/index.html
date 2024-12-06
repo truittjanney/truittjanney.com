@@ -23,7 +23,10 @@
     <script src="https://kit.fontawesome.com/2042281ab1.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- Navbar -->
+
+    <!-- NAVBAR -->
+
+    <!-- social media icons -->
     <nav class="navbar position-fixed navbar-expand-lg w-100 custom-navbar d-flex align-items-center">
         <ul class="icons">
           <li>
@@ -51,34 +54,28 @@
           </li>
         </ul>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
+        <!-- navigation buttons -->
+        <div class="navbar-section-buttons">
             <a class="nav-link" aria-current="page" href="#about">About</a>
             <a class="nav-link" href="#skills">Skills</a>
             <a class="nav-link" href="#portfolio">Portfolio</a>
             <a class="nav-link" href="#contactme">Contact Me</a>
           </div>
-        </div>
-    </div>
     </nav>
 
-    <!-- Header -->
+    <!-- HEADER -->
+
     <header id="header" class="alt">
       <span id="about"></span>
       <div class="inner">
 
         <!-- ABOUT ME SECTION-->
+
+<div class="profile-picture-container">
+  <img src="images/2023:11 - Profile Picture 1 (Edited).png" alt="Profile Picture" class="profile-image">
+  </div>
+</div>        
+        
         <h1>T. Truitt Janney</h1>
         <div class="bio">
           <p>
@@ -106,6 +103,7 @@
       <!-- Banner -->
 
       <!-- SKILLS SECTION -->
+
       <section id="skills" class="main">
         <span class="icon fa-diamond major"></span>
         <h2>Skills</h2>
@@ -132,6 +130,7 @@
       <!-- Items -->
 
       <!-- PORTFOLIO SECTION -->
+
       <section class="main items" id="portfolio">
         <article class="item">
           <header>
@@ -196,7 +195,9 @@
           </ul>
         </article>
       </section>
+
       <!-- CONTACT ME SECTION -->
+
       <section id="contactme" class="main special">
         <h2>Contact Me</h2>
         <p>
@@ -211,13 +212,14 @@
         </p>
 
         <!-- CONTACT FORM -->
+
         <div class="contact-form">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
               >Full Name:</label>
             <input
               type="name"
-              class="form-control"
+              class="form-control col-sm"
               id="exampleFormControlInput1"
               placeholder="full name"
             />
@@ -227,7 +229,7 @@
           >Email Address:</label>
         <input
           type="email"
-          class="form-control"
+          class="form-control col-sm"
           id="exampleFormControlInput1"
           placeholder="email address"
         />
@@ -238,18 +240,20 @@
               >Message:</label
             >
             <textarea
-              class="form-control"
+              class="form-control col-sm"
               id="exampleFormControlTextarea1"
+              placeholder="message"
               rows="3"
             ></textarea>
+            <ul class="actions">
+              <li><a href="#" class="button big">Submit</a></li>
+            </ul>
           </div>
         </div>
 
 
 
-        <ul class="actions">
-          <li><a href="#" class="button big">Submit</a></li>
-        </ul>
+
       </section>
       <!-- Main --><!--
 					<section id="main" class="main">
@@ -260,31 +264,7 @@
 					</section>
 				--><!-- Footer -->
       <footer id="footer">
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/t-truitt-janney/"
-              target="_blank"
-              class="icon fa-linkedin"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/truittjanney"
-            target="_blank"
-            class="icon fa-brands fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/truittjanney/"
-              target="_blank"
-              class="icon fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-        </ul>
+<!-- social media icons were deleted here -->
       </footer>
     </div>
 
