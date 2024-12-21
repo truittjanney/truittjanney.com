@@ -122,16 +122,18 @@
 
       <div class="skills-section">
         <section id="skills" class="main d-flex flex-column">
-          <h2 style="text-align: center;">Skills</h2>
-          <img src="images/icon_images/icon_brain_circuit_board.png" alt="Brain Circuit Board Icon" width="125rem" height="125rem" class="mx-auto"></img>
+
+        <div class="d-flex flex-column align-items-center">
+          <h2 style="text-align: center; margin-bottom: -10px;">Skills</h2>
+          <img src="images/icon_images/icon_brain_circuit_board.png" alt="Brain Circuit Board Icon" width="135rem" height="135rem" class="mx-auto"></img>
+        </div>
           <ul className="Skills">
   
             <!-- Skills Row 1 -->
             <li class="d-flex justify-content-between align-items-center">
               <div class="d-flex flex-column align-items-center" style="height: 130px; width: 130px; outline: 1px solid red;">
                 <img height="100px" width="100px" src="images/logo_images/logo_html5.png" class="rounded-4" alt="HTML5 Logo"/>
-                <b>HTML5</b>
-                
+                <b>HTML5</b>   
               </div>
               <div class="d-flex flex-column align-items-center">
                 <img height="100px" width="100px" src="images/logo_images/logo_css3.png" class="rounded-4" alt="CSS3 Logo"/>
@@ -266,8 +268,11 @@
       <!-- CONTACT ME SECTION -->
 
       <section id="contactme" class="main special">
-        <h2>Contact Me</h2>
-        <img src="images/icon_images/icon_envelope_red.png" alt="Red Envelope Icon" width="250rem" height="100rem" class="mx-auto" style="margin: 0 0 0 0;"></img>
+
+      <div class="d-flex flex-column align-items-center my-3">
+        <h2 style="text-align: center; margin-bottom: -5px;">Contact Me</h2>
+        <img src="images/icon_images/icon_envelope.png" alt="Envelope Icon" width="125rem" height="100rem" class="mx-auto"></img>
+      </div>
         <p>
           I'd love to hear from you! Whether you're an organization interested
           in viewing my resume or a fellow developer with an exciting project
@@ -284,32 +289,32 @@
         <div class="contact-form px-5 mx-5">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
-              >Full Name:</label>
+              ></label>
             <input
               type="name"
               class="form-control col-sm"
               id="exampleFormControlInput1"
-              placeholder=""
+              placeholder="Full Name"
             />
           </div>
           
           <label for="exampleFormControlInput1" class="form-label"
-          >Email:</label>
+          ></label>
         <input
           type="email"
           class="form-control col-sm"
           id="exampleFormControlInput1"
-          placeholder=""
+          placeholder="Email"
         />
 
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label"
-            >Message:</label
+            ></label
           >
           <textarea
             class="form-control col-sm"
             id="exampleFormControlTextarea1"
-            placeholder=""
+            placeholder="Message"
             rows="3"
           ></textarea>
           <ul class="actions">
@@ -318,9 +323,6 @@
         </div>
 
       </div>
-
-        </div>
-
 
 
 
@@ -337,6 +339,7 @@
 <!-- social media icons were deleted here -->
       </footer>
     </div>
+  </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
