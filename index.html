@@ -283,43 +283,46 @@
         <!-- CONTACT FORM -->
 
         <div class="contact-form px-5 mx-5">
+          <form id="contact-form">
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
+            <label for="fullNameInput" class="form-label"
               ></label>
             <input
               type="name"
               class="form-control col-sm"
-              id="exampleFormControlInput1"
+              id="fullNameInput"
               placeholder="Full Name"
+              required
             />
           </div>
           
-          <label for="exampleFormControlInput1" class="form-label"
-          ></label>
+          <label for="emailInput" class="form-label"></label>
         <input
           type="email"
           class="form-control col-sm"
-          id="exampleFormControlInput1"
+          id="emailInput"
           placeholder="Email"
         />
 
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
+          <label for="messageInput" class="form-label"
             ></label
           >
           <textarea
             class="form-control col-sm"
-            id="exampleFormControlTextarea1"
+            id="messageInput"
             placeholder="Message"
             rows="3"
           ></textarea>
           <ul class="actions">
-            <li><a href="mailto:truittjanney93@gmail.com" class="button big">Submit</a></li>
+            <li>
+              <button type="submit" class="button big">Submit</button>
+            </li>
           </ul>
         </div>
 
+        </form>
       </div>
-
 
 
       </section>
@@ -346,5 +349,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>

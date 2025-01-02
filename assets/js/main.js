@@ -4,6 +4,31 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+emailjs.init("WvmZY4h-HkHU4wTzj");
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+	event.preventDefault();
+
+    // Get form data.
+    const fullName = document.getElementById('fullNameInput').value;
+    const email = document.getElementById('emailInput').value;
+    const message = document.getElementById('messageInput').value;
+
+	emailjs.send("service_ya1txb9", "template_i1fti0g", {
+		from_name: fullName,
+		from_email: email,
+		message: message,
+	})
+	.then(function (response) {
+		alert("Message sent successfully!");
+}, function (error) {
+	alert("Failed to send your message. Please try again.");
+	console.error("EmailJS Error:", error);
+	});
+});
+
+console.log(fullName, email, message);
+
 (function($) {
 
 	skel.breakpoints({
