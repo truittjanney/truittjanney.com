@@ -8,11 +8,14 @@ emailjs.init("WvmZY4h-HkHU4wTzj");
 
 document.getElementById("contact-form").addEventListener("submit", function (event) {
 	event.preventDefault();
+	console.log("Form submitted");
 
     // Get form data.
     const fullName = document.getElementById('fullNameInput').value;
     const email = document.getElementById('emailInput').value;
     const message = document.getElementById('messageInput').value;
+
+	console.log(fullName, email, message);
 
 	emailjs.send("service_ya1txb9", "template_i1fti0g", {
 		from_name: fullName,
@@ -26,8 +29,6 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 	console.error("EmailJS Error:", error);
 	});
 });
-
-console.log(fullName, email, message);
 
 (function($) {
 
