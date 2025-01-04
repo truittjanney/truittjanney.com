@@ -18,16 +18,16 @@
         padding: 0 0.5em 0.25em 0.5em;
         border-bottom: solid 2px #ffffff;
         font-weight: 200;
-        font-family: "Pacifico", cursive;
+        font-family: "Times New Roman";
         text-transform: none;
         letter-spacing: 0;
     }
 
     p {
-        text-transform: uppercase;
+        text-transform: none;
         letter-spacing: 0.325rem;
         font-weight: 400;
-        font-size: 0.8em;
+        font-size: 1.1em;
         padding: 0 1.25em;
     }
 

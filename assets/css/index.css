@@ -57,6 +57,10 @@
 	margin-right: 20px;
 }
 
+#contactme {
+	font-size: 1.1em;
+}
+
 /* Reset */
 
 	/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -150,7 +154,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Times New Roman", Georgia, sans-serif;
 		font-size: 17pt;
 		font-weight: 200;
 		line-height: 1.65;
@@ -194,7 +198,7 @@
 		}
 
 	strong, b {
-		font-weight: 400;
+		font-weight: 800;
 	}
 
 	em, i {
@@ -280,7 +284,7 @@
 	code {
 		border-radius: 4px;
 		border: solid 1px;
-		font-family: "Courier New", monospace;
+		font-family: "Times New Roman", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -288,7 +292,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: "Times New Roman", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
