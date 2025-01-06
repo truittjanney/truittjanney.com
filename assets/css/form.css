@@ -273,3 +273,11 @@ input[type="radio"]:focus + label:before {
             }
 
     }
+
+    @media screen and (max-width: 390px) {
+
+        textarea.form-control {
+            height: 12em;
+        }
+
+    }
