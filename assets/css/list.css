@@ -36,6 +36,8 @@ ul {
             }
 
     ul.icons {
+        margin-left: 25px;
+        margin-right: -30px;
         cursor: default;
         list-style: none;
         padding-left: 0;
