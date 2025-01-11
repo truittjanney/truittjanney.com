@@ -5,15 +5,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #444;
+    background-color: darkgray;
     color: rgba(255, 255, 255, 0.75);
     text-align: center;
     padding: 8em 0 6em 0;
-    height: 20em;
+    padding-top: 38em;
+    height: 100em;
     min-height: 20em;
     min-height: 75vh;
 
     h1 {
+        color: black;
         font-size: 4em;
         padding: 0 0.5em 0.25em 0.5em;
         border-bottom: solid 2px #ffffff;
@@ -24,6 +26,7 @@
     }
 
     p {
+        color: black;
         text-transform: none;
         letter-spacing: 0.325rem;
         font-weight: 400;
