@@ -33,10 +33,10 @@
 }
 
 .navbar-section-buttons {
-	font-size: 1em;
-    margin: 0em 0em 0em 58em;
+	font-size: 1.2em;
+    /* margin: 0em 0em 0em 58em; */
 	display: flex;
-	width: 500px;
+	/* width: 500px; */
 }
 
 .nav-link {
