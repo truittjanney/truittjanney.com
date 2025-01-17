@@ -1,12 +1,10 @@
-/* Header */
-
 #header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: rgb(20, 20, 20);
-    /* background-image: url('/images/other_images/gray_wallpaper2.jpg'); */
+    /* background-image: url('/images/other_images/gray_wallpaper.jpg'); */
     background-size: cover;
     color: rgba(255, 255, 255, 0.75);
     text-align: center;
@@ -16,6 +14,7 @@
     min-height: 20em;
     min-height: 75vh;
     margin: 8em;
+    margin-top: 1.5em;
 
     h1 {
         color: white;
@@ -99,21 +98,34 @@
 @media screen and (max-width: 736px) {
 
     #header {
-        padding: 4em 2em 2em 2em;
+        padding: 4em 0em 2em 0em;
+        margin: 2em;
+        height: 115em;
     }
 
-        #header.alt h1 {
-            font-size: 2.5em;
+        #header h1 {
+            font-size: 2.6em;
             padding-left: 0;
             padding-right: 0;
         }
 
-        #header.alt p {
+        #header p {
+            font-size: 14px;
             padding: 0;
+            line-height: 1.8em;
         }
 
-        #header.alt .inner {
+        #header.inner {
             max-width: 20em;
+        }
+
+        #header.bio {
+            margin: 0px;
+        }
+
+        .profile-image {
+            height: 17rem;
+            width: 17rem;
         }
 
 }
