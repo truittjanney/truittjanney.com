@@ -9,15 +9,6 @@
         color: inherit;
     }
 
-    #footer:before {
-        content: '';
-        display: inline-block;
-        width: 6em;
-        height: 2px;
-        background-color: #666666;
-        margin-bottom: 4em;
-    }
-
     #footer .copyright {
         font-size: 0.8em;
     }
