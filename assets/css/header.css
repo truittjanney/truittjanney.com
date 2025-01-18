@@ -4,13 +4,11 @@
     justify-content: center;
     flex-direction: column;
     background-color: rgb(20, 20, 20);
-    /* background-image: url('/images/other_images/gray_wallpaper.jpg'); */
     background-size: cover;
     color: rgba(255, 255, 255, 0.75);
     text-align: center;
-    padding: 8em 0 6em 0;
-    /* padding-top: 18em; */
-    height: 80em;
+    padding: 12em 0 0 0;
+    height: 70em;
     min-height: 20em;
     min-height: 75vh;
     margin: 8em;
@@ -98,7 +96,7 @@
 @media screen and (max-width: 736px) {
 
     #header {
-        padding: 4em 0em 2em 0em;
+        padding: 10em 0em 2em 0em;
         margin: 2em;
         height: 115em;
     }
