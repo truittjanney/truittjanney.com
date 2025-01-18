@@ -1,12 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Pacifico%7CSource+Sans+Pro:200,400");
 
-/*
-	Epilogue by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 .profile-picture-container {
 	display: flex;
 	justify-content: center;
@@ -22,7 +16,6 @@
 	object-position: 50% 12%;
     border-radius: 50%;
     border: 5px solid #ccc;
-	/* box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.2); */
 	clip-path: circle(50% at 50% 50%);
 }
 
@@ -35,9 +28,7 @@
 
 .navbar-section-buttons {
 	font-size: 1.2em;
-    /* margin: 0em 0em 0em 58em; */
 	display: flex;
-	/* width: 500px; */
 }
 
 .nav-link {
@@ -70,16 +61,6 @@
 	font-size: 1.1em;
 }
 
-/* Reset */
-
-	/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-	} */
 .image.fit img {
 	width: 100%;
 	height: auto;
@@ -421,7 +402,7 @@
 
     }
 
-/* skills */
+/* Skills */
 
 #skills {
     display: inline-block;
@@ -451,7 +432,7 @@
 
     }
 
-/* contactme */
+/* Contact Me */
 
 #contactme {
     padding: 2em 0 0.1em 0;
