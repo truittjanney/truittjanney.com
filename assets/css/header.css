@@ -7,11 +7,11 @@
     background-size: cover;
     color: rgba(255, 255, 255, 0.75);
     text-align: center;
-    padding: 12em 0 0 0;
-    height: 70em;
+    padding: 10em 0 0 2em;
+    height: 72em;
     min-height: 20em;
     min-height: 75vh;
-    margin: 8em;
+    margin: 8em 8em 2em 8em;
     margin-top: 1.5em;
 
     h1 {
