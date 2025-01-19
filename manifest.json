@@ -1,9 +1,16 @@
 {
+    "short_name": "truittjanney",
+    "name": "truittjanney.com",
     "icons": [
       {
-        "src": "/images/other_images/favicon_truittjanney.com_16x16.png",
-        "sizes": "16x16",
-        "type": "png"
+        "src": "images/other_images/favicon_truittjanney.com_16x16.png",
+        "type": "image/png",
+        "sizes": "16x16"
+      },
+      {
+        "src": "images/other_images/favicon_truittjanney.com.png",
+        "type": "image/png",
+        "sizes": "667x755"
       }
     ]
   }
