@@ -34,13 +34,28 @@
       a:hover {
         text-decoration: underline;
       }
+
+      img {
+        height: 400px;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        img {
+          height: 350px;
+          width: 350px;
+        }
+      }
     </style>
   </head>
   <body>
-    <img
-      src="images/other_images/robot_in_space5.jpg"
-      style="height: 400px; width: 400px"
-    />
+    <img src="images/other_images/robot_in_space5.jpg" />
     <h1>404 - Lost in Cyberspace!</h1>
     <p>
       Our robot friend wandered off into the digital abyss and couldn’t find
