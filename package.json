@@ -12,5 +12,8 @@
   "description": "",
   "dependencies": {
     "@emailjs/browser": "^4.4.1"
+  },
+  "devDependencies": {
+    "prettier": "3.5.3"
   }
 }
