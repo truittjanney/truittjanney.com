@@ -78,9 +78,10 @@
 
 @media screen and (max-width: 736px) {
   #header {
-    padding: 10em 0em 2em 0em;
+    padding: 5em 1em 2em 1em;
     margin: 2em;
-    height: 130em;
+    height: auto;
+    min-height: 50vh;
   }
 
   #header h1 {
@@ -91,7 +92,7 @@
 
   #header p {
     font-size: 14px;
-    padding: 0;
+    padding: 0 1em;
     line-height: 1.8em;
   }
 
