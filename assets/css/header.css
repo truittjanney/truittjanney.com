@@ -7,9 +7,8 @@
   background-size: cover;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  padding: 10em 0 0 2em;
-  height: 72em;
-  min-height: 20em;
+  padding: 10em 2em 5em 2em;
+  height: auto;
   min-height: 75vh;
   margin: 8em 8em 2em 8em;
   margin-top: 1.5em;
