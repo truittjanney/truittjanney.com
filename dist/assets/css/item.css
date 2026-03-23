@@ -1,3 +1,16 @@
+.main.items article.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.main.items article.item p {
+    flex: 1;
+}
+
+.main.items article.item ul.actions {
+    margin-top: auto;
+}
+
 .item {
     padding: 3em 3em 1em 3em;
     background-color: #ffffff;

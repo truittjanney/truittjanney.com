@@ -107,4 +107,14 @@
     height: 17rem;
     width: 17rem;
   }
+
+  .bio {
+    margin: 0 1.5em;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  .bio p {
+    margin-bottom: 0.75em;
+  }
 }
