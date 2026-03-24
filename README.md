@@ -45,6 +45,8 @@ A key focus of this project is secure deployment:
   - Amazon S3
   - Amazon CloudFront
   - Amazon Route 53
+  - AWS Certificate Manager
+  - Amazon DynamoDB
   - IAM (OIDC Authentication)
 - **GitHub:**
   - GitHub Actions
