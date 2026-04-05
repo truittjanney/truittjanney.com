@@ -2,81 +2,120 @@
 
 ## Overview
 
-This is my personal portfolio website designed to showcase my work as a software developer and devops/cloud focused engineer. The site highlights my projects, technical skillset, and includes a contact form for professional outreach.
+This is my personal portfolio website designed to showcase my work as a software developer and DevOps/cloud-focused engineer. The site highlights my technical skillsets, projects, and includes a contact form for professional outreach.
 
-Beyond being a portfolio, this project demonstrates my ability to design, secure, and deploy a production-ready static website using modern cloud infrastructure and CI/CD practices.
+Beyond being a portfolio, this project demonstrates my ability to design, secure, deploy, and monitor a production-ready static website using modern cloud infrastructure and CI/CD practices.
+
+---
 
 ## Architecture
 
 ```
-User → CloudFront → S3 (Static Website Hosting)
+User → Route 53 → CloudFront → S3 (Private Origin)
 ```
 
-- Amazon CloudFront is used as a global CDN to cache and deliver content with low latency
-- Amazon S3 stores and serves static website assets
-- Amazon Route 53 handles DNS routing for the domain
+* **Amazon Route 53** handles DNS resolution for the domain
+* **Amazon CloudFront** acts as a global CDN to cache and deliver content with low latency
+* **Amazon S3** stores static website assets and is configured as a private origin
+* **AWS Certificate Manager (ACM)** provides HTTPS encryption
+
+CloudFront uses Origin Access Control (OAC) to securely access the S3 bucket, preventing direct public access.
+
+---
 
 ## CI/CD Pipeline
 
 This project uses GitHub Actions to automate deployments.
 
-**Deployment Flow:**
-- Push to `dev` branch → deploys to development environment
-- Push to `main` branch → deploys to production environment
+### Deployment Flow
 
-**Pipeline Responsibilities:**
-- Authenticate securely with AWS using OIDC (no stored credentials)
-- Sync static files to S3
-- Invalidate CloudFront cache after deployment
+* Push to `dev` branch → deploys to development environment
+* Push to `main` branch → deploys to production environment
+
+### Pipeline Responsibilities
+
+* Authenticate securely with AWS using **OIDC (no stored credentials)**
+* Sync static files to S3
+* Invalidate CloudFront cache after deployment
+
+---
 
 ## Security
 
-A key focus of this project is secure deployment:
+Security is a key focus of this project:
 
-- Uses OIDC (OpenID Connect) to authenticate GitHub Actions with AWS
-- No AWS access keys or secrets stored in the repository
-- IAM role follows least privilege principle
-- Short-lived credentials are automatically generated and rotated
+* Uses **OIDC (OpenID Connect)** for secure authentication between GitHub Actions and AWS
+* No AWS access keys or secrets are stored
+* IAM roles follow the **principle of least privilege**
+* S3 buckets are **private** and only accessible via CloudFront (OAC)
+* HTTPS is enforced using ACM
+
+---
+
+## Monitoring & Logging
+
+To improve observability and reliability:
+
+* **CloudWatch alarms** monitor CloudFront 4xx and 5xx error rates
+* **Amazon SNS** sends email alerts when thresholds are exceeded
+* **CloudFront access logs** are stored in S3 for debugging and traffic analysis
+
+This enables proactive detection and troubleshooting of issues.
+
+---
 
 ## Tech Stack
 
-- HTML, CSS, JavaScript
-- **Amazon Web Services:**
-  - Amazon S3
-  - Amazon CloudFront
-  - Amazon Route 53
-  - AWS Certificate Manager
-  - Amazon DynamoDB
-  - IAM (OIDC Authentication)
-- **GitHub:**
-  - GitHub Actions
+* HTML, CSS, JavaScript
+
+**Amazon Web Services:**
+
+* Amazon S3
+* Amazon CloudFront
+* Amazon Route 53
+* AWS Certificate Manager (ACM)
+* AWS IAM
+* Amazon CloudWatch
+* Amazon SNS
+
+**DevOps / CI-CD:**
+
+* Terraform
+* GitHub Actions (OIDC authentication)
+
+---
 
 ## Deployment Details
 
-Static files are stored in the `/dist` directory for S3 uploads.
+Static files are stored in the `/dist` directory and deployed using:
 
-**Deployed using:**
 ```bash
 aws s3 sync ./dist s3://<bucket> --delete
 ```
 
 CloudFront cache is invalidated after each deployment to ensure users receive the latest version.
 
+---
+
 ## Key Learnings
 
 Through this project, I gained hands-on experience with:
 
-- Designing cloud architecture for static websites
-- Building CI/CD pipelines using GitHub Actions
-- Implementing secure authentication using OIDC
-- Managing AWS IAM roles and permissions
-- Understanding CDN caching and invalidation strategies
+* Designing and deploying cloud architecture for static websites
+* Implementing infrastructure as code using Terraform
+* Building CI/CD pipelines using GitHub Actions
+* Securing authentication with OIDC and IAM roles
+* Managing Terraform state with S3 backend, versioning, and locking
+* Understanding CDN caching behavior and invalidation strategies
+* Implementing monitoring and alerting using CloudWatch and SNS
+
+---
 
 ## Future Improvements
 
-- Advanced cache control strategies for improved performance
-- Custom domain enhancements and monitoring
-- Logging and observability (CloudWatch)
+* Optional WAF integration for enhanced security
+
+---
 
 ## Author
 
