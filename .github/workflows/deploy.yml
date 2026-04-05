@@ -31,7 +31,7 @@ jobs:
                   echo "DISTRIBUTION_ID=E3UZNF6QBUZVDO" >> $GITHUB_ENV
                 else
                   echo "BUCKET=truittjanney-website-dev" >> $GITHUB_ENV
-                  echo "DISTRIBUTION_ID=E3NZ0FIEE9942Z" >> $GITHUB_ENV
+                  echo "DISTRIBUTION_ID=E1P2CB0T9OSWQD" >> $GITHUB_ENV
                 fi
 
             - name: Sync dist directory to S3
