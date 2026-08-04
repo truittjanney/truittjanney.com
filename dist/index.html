@@ -3,8 +3,6 @@
 <html lang="en">
 
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
@@ -13,16 +11,6 @@
   <meta name="theme-color" content="#07111f" />
   <title>T. Truitt Janney | Full-Stack, Cloud &amp; DevOps</title>
 
-  <link rel="stylesheet" href="assets/css/index.css" />
-  <link rel="stylesheet" href="assets/css/button.css" />
-  <link rel="stylesheet" href="assets/css/footer.css" />
-  <link rel="stylesheet" href="assets/css/form.css" />
-  <link rel="stylesheet" href="assets/css/header.css" />
-  <link rel="stylesheet" href="assets/css/icon.css" />
-  <link rel="stylesheet" href="assets/css/image.css" />
-  <link rel="stylesheet" href="assets/css/item.css" />
-  <link rel="stylesheet" href="assets/css/list.css" />
-  <link rel="stylesheet" href="assets/css/table.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 
   <!-- FAVICON -->
@@ -75,458 +63,544 @@
     </div>
   </header>
 
-  <section id="about" class="hero" aria-labelledby="hero-title">
-    <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
-    <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+  <main>
+    <section id="about" class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
 
-    <div class="hero__inner">
-      <div class="hero__content">
-        <p class="hero__eyebrow">
-          Full-stack development <span aria-hidden="true">/</span> Cloud
-          <span aria-hidden="true">/</span> DevOps
-        </p>
-        <h1 id="hero-title" class="hero__title">
-          Full-Stack Developer with
-          <span>Cloud &amp; DevOps Experience.</span>
-        </h1>
-        <p class="hero__lead">
-          I build reliable web applications, automate delivery pipelines, and
-          deploy secure AWS infrastructure—connecting product development with
-          the systems that support it.
-        </p>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            Full-stack development <span aria-hidden="true">/</span> Cloud
+            <span aria-hidden="true">/</span> DevOps
+          </p>
+          <h1 id="hero-title" class="hero__title">
+            Full-Stack Developer with
+            <span>Cloud &amp; DevOps Experience.</span>
+          </h1>
+          <p class="hero__lead">
+            I build reliable web applications, automate delivery pipelines,
+            and deploy secure AWS infrastructure—connecting product
+            development with the systems that support it.
+          </p>
 
-        <div class="hero__actions">
-          <a class="button-primary" href="#portfolio">
-            View my projects
-            <svg viewBox="0 0 20 20" aria-hidden="true">
-              <path d="m7 4 6 6-6 6" />
-            </svg>
+          <div class="hero__actions">
+            <a class="button-primary" href="#portfolio">
+              View my projects
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="m7 4 6 6-6 6" />
+              </svg>
+            </a>
+            <a class="button-secondary" href="#contactme">Contact me</a>
+          </div>
+
+          <ul class="hero__proof" aria-label="Professional highlights">
+            <li>
+              <span class="proof-icon" aria-hidden="true">✓</span>
+              Production-deployed applications
+            </li>
+            <li>
+              <span class="proof-icon" aria-hidden="true">✓</span>
+              AWS Certified Cloud Practitioner
+            </li>
+            <li>
+              <span class="proof-icon" aria-hidden="true">✓</span>
+              CI/CD &amp; infrastructure as code
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="portrait-frame">
+            <div class="portrait-frame__accent" aria-hidden="true"></div>
+            <img src="images/other_images/2023_11_profile_picture_1_edited.png" alt="T. Truitt Janney" width="404"
+              height="618" fetchpriority="high" />
+            <div class="portrait-card">
+              <span class="portrait-card__status" aria-hidden="true"></span>
+              <div>
+                <strong>Open to opportunities</strong>
+                <span>Web, full-stack, cloud &amp; DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-summary" aria-labelledby="about-summary-title">
+      <div class="about-summary__inner">
+        <div class="about-summary__heading">
+          <p class="section-kicker">What I bring</p>
+          <h2 id="about-summary-title">
+            Technical breadth. Practical ownership.
+          </h2>
+        </div>
+        <div class="about-summary__copy">
+          <p>
+            During my DevOps apprenticeship, I worked with engineering and QA
+            teams to improve release processes for React Native iOS and
+            Android applications. I supported CI/CD pipelines using GitHub
+            Actions, Fastlane, and Bash, resolved build and environment
+            issues, and helped teams deliver stable releases.
+          </p>
+          <p>
+            As an AWS Certified Cloud Practitioner with a full-stack
+            development foundation, I understand systems end to end—from
+            application code to infrastructure and automation. My background
+            in sales and marketing also helps me communicate clearly, take
+            ownership, and connect technical work to real business needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section" aria-labelledby="skills-title">
+      <div class="section-shell">
+        <header class="section-heading">
+          <div>
+            <p class="section-kicker">Capabilities</p>
+            <h2 id="skills-title">Skills built through real delivery.</h2>
+          </div>
+          <p class="section-heading__copy">
+            A focused view of the technologies I have used across application
+            development, deployment automation, and cloud infrastructure.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card skill-card--accent">
+            <div class="skill-card__heading">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7.5 18.5h9a4 4 0 0 0 .65-7.95A5.5 5.5 0 0 0 6.7 8.3 4.75 4.75 0 0 0 7.5 18.5Z" />
+                  <path d="m9 14 2 2 4-4" />
+                </svg>
+              </span>
+              <div>
+                <span class="skill-card__label">Primary focus</span>
+                <h3>Cloud &amp; DevOps</h3>
+              </div>
+            </div>
+            <p>
+              Automated delivery, infrastructure as code, cloud hosting, and
+              release support across web and mobile environments.
+            </p>
+            <ul class="skill-list" aria-label="Cloud and DevOps skills">
+              <li class="skill-chip skill-chip--core">AWS</li>
+              <li class="skill-chip skill-chip--core">Terraform</li>
+              <li class="skill-chip skill-chip--core">CI/CD</li>
+              <li>GitHub Actions</li>
+              <li>Git</li>
+              <li>Bash</li>
+              <li>Fastlane</li>
+              <li>Maestro</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__heading">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="m8.5 8-4 4 4 4M15.5 8l4 4-4 4M13.5 5l-3 14" />
+                </svg>
+              </span>
+              <div>
+                <span class="skill-card__label">User experience</span>
+                <h3>Frontend</h3>
+              </div>
+            </div>
+            <p>
+              Responsive interfaces built with maintainable components,
+              accessible markup, and clear interaction states.
+            </p>
+            <ul class="skill-list" aria-label="Frontend skills">
+              <li class="skill-chip skill-chip--core">React</li>
+              <li class="skill-chip skill-chip--core">JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Vite</li>
+              <li>Fetch API</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__heading">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="16" rx="3" />
+                  <path d="M8 9h8M8 13h5M8 17h3" />
+                </svg>
+              </span>
+              <div>
+                <span class="skill-card__label">Application services</span>
+                <h3>Backend</h3>
+              </div>
+            </div>
+            <p>
+              APIs and server-side workflows with authentication, validation,
+              file handling, and secure access patterns.
+            </p>
+            <ul class="skill-list" aria-label="Backend skills">
+              <li class="skill-chip skill-chip--core">Node.js</li>
+              <li class="skill-chip skill-chip--core">Express</li>
+              <li>REST APIs</li>
+              <li>JWT</li>
+              <li>bcrypt</li>
+              <li>Multer</li>
+              <li>C#</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__heading">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="6" rx="7" ry="3" />
+                  <path d="M5 6v6c0 1.65 3.13 3 7 3s7-1.35 7-3V6M5 12v6c0 1.65 3.13 3 7 3s7-1.35 7-3v-6" />
+                </svg>
+              </span>
+              <div>
+                <span class="skill-card__label">Data &amp; delivery</span>
+                <h3>Databases &amp; Tools</h3>
+              </div>
+            </div>
+            <p>
+              Relational data modeling, development tooling, and production
+              platforms used to move applications from local to live.
+            </p>
+            <ul class="skill-list" aria-label="Database and platform skills">
+              <li class="skill-chip skill-chip--core">PostgreSQL</li>
+              <li class="skill-chip skill-chip--core">Prisma</li>
+              <li>SQL</li>
+              <li>Firebase</li>
+              <li>Postman</li>
+              <li>Railway</li>
+              <li>Vercel</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="projects-section" aria-labelledby="projects-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading--projects">
+          <div>
+            <p class="section-kicker">Selected work</p>
+            <h2 id="projects-title">Projects with production depth.</h2>
+          </div>
+          <p class="section-heading__copy">
+            My strongest work combines product development with the systems
+            required to deploy, secure, and operate it reliably.
+          </p>
+        </header>
+
+        <div class="featured-projects">
+          <article class="project-card project-card--featured">
+            <div class="project-card__visual project-card__visual--product">
+              <div class="browser-preview">
+                <div class="browser-preview__bar" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                  <span class="browser-preview__address">mediavault.truittjanney.com</span>
+                </div>
+                <img src="images/other_images/mediavault_albums_page.png" alt="MediaVault album dashboard" width="2868"
+                  height="1358" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-badge">Flagship project</span>
+                <span>Full-stack application</span>
+              </div>
+              <h3>MediaVault</h3>
+              <p class="project-card__lead">
+                A production-deployed application for securely organizing
+                photos and videos with private cloud storage, protected
+                albums, and authenticated access.
+              </p>
+              <ul class="project-highlights">
+                <li>
+                  Built the complete media workflow—from uploads and album
+                  organization to favorites, moves, reordering, and deletion.
+                </li>
+                <li>
+                  Designed a React frontend, Node/Express API, and
+                  PostgreSQL/Prisma data layer with JWT authentication.
+                </li>
+                <li>
+                  Deployed across Vercel, Railway, and AWS using private S3
+                  storage and presigned URLs.
+                </li>
+              </ul>
+              <ul class="technology-list" aria-label="MediaVault technologies">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+                <li>Prisma</li>
+                <li>AWS S3</li>
+                <li>Railway</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="button-primary" href="https://mediavault.truittjanney.com" target="_blank" rel="noreferrer">
+                  View live application
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="m7 4 6 6-6 6" />
+                  </svg>
+                </a>
+                <a class="text-link" href="https://github.com/truittjanney/media-vault" target="_blank"
+                  rel="noreferrer">
+                  View source
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+              <p class="project-note">
+                Public signup is intentionally disabled for the portfolio
+                deployment.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--featured project-card--reverse">
+            <a class="project-card__visual project-card__visual--video"
+              href="https://www.youtube.com/watch?v=VfKgAgI_g6I" target="_blank" rel="noreferrer"
+              aria-label="Watch the Cloud Infrastructure Project demo on YouTube">
+              <img src="https://i.ytimg.com/vi/VfKgAgI_g6I/hqdefault.jpg"
+                alt="Cloud Infrastructure Project video preview" width="480" height="360" loading="lazy"
+                data-video-thumbnail />
+              <span class="play-button" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="m9 7 8 5-8 5V7Z" />
+                </svg>
+              </span>
+              <span class="video-label">Watch project walkthrough</span>
+            </a>
+
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-badge">Featured infrastructure</span>
+                <span>AWS &amp; automation</span>
+              </div>
+              <h3>Cloud Infrastructure Project</h3>
+              <p class="project-card__lead">
+                Terraform-based AWS infrastructure for a secure,
+                multi-environment static website with automated delivery,
+                monitoring, and alerting.
+              </p>
+              <ul class="project-highlights">
+                <li>
+                  Provisioned S3, CloudFront, Route 53, ACM, IAM, CloudWatch,
+                  and SNS with reusable Terraform configuration.
+                </li>
+                <li>
+                  Created separate development and production environments
+                  with remote, versioned Terraform state.
+                </li>
+                <li>
+                  Implemented GitHub Actions deployments using OIDC instead of
+                  long-lived AWS credentials.
+                </li>
+              </ul>
+              <ul class="technology-list" aria-label="Cloud Infrastructure Project technologies">
+                <li>Terraform</li>
+                <li>AWS</li>
+                <li>CloudFront</li>
+                <li>GitHub Actions</li>
+                <li>OIDC</li>
+                <li>CloudWatch</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="button-primary" href="https://www.youtube.com/watch?v=VfKgAgI_g6I" target="_blank"
+                  rel="noreferrer">
+                  Watch walkthrough
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="m7 4 6 6-6 6" />
+                  </svg>
+                </a>
+                <a class="text-link" href="https://github.com/truittjanney/truittjanney.com-infrastructure"
+                  target="_blank" rel="noreferrer">
+                  View source
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="additional-projects__heading">
+          <div>
+            <p class="section-kicker">Additional experience</p>
+            <h3>Collaborative projects</h3>
+          </div>
+          <p>
+            Earlier team builds that strengthened my experience contributing
+            to shared codebases and delivering features with other developers.
+          </p>
+        </div>
+
+        <div class="additional-projects">
+          <article class="compact-project">
+            <a class="compact-project__visual" href="https://www.youtube.com/watch?v=2jly9NNo-6E" target="_blank"
+              rel="noreferrer" aria-label="Watch the AccountaPair demo on YouTube">
+              <img src="https://i.ytimg.com/vi/2jly9NNo-6E/hqdefault.jpg" alt="AccountaPair project video preview"
+                width="480" height="360" loading="lazy" data-video-thumbnail />
+              <span class="play-button play-button--small" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="m9 7 8 5-8 5V7Z" />
+                </svg>
+              </span>
+            </a>
+            <div class="compact-project__content">
+              <span class="contribution-badge">Collaborative contribution</span>
+              <h4>AccountaPair</h4>
+              <p>
+                Contributed to a real-time collaboration experience where new
+                designers and developers practice skills through guided
+                challenges.
+              </p>
+              <ul class="technology-list technology-list--compact">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>Firebase</li>
+                <li>CSS</li>
+              </ul>
+              <div class="compact-project__links">
+                <a href="https://www.youtube.com/watch?v=2jly9NNo-6E" target="_blank" rel="noreferrer">Watch demo <span
+                    aria-hidden="true">↗</span></a>
+                <a href="https://github.com/makeitMVPadmin/LAP5_Accountabuddy" target="_blank" rel="noreferrer">View
+                  source <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="compact-project">
+            <a class="compact-project__visual" href="https://www.youtube.com/watch?v=aF0RZPqcsPo" target="_blank"
+              rel="noreferrer" aria-label="Watch the Chef-Dojo Recipe App demo on YouTube">
+              <img src="https://i.ytimg.com/vi/aF0RZPqcsPo/hqdefault.jpg" alt="Chef-Dojo Recipe App video preview"
+                width="480" height="360" loading="lazy" data-video-thumbnail />
+              <span class="play-button play-button--small" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="m9 7 8 5-8 5V7Z" />
+                </svg>
+              </span>
+            </a>
+            <div class="compact-project__content">
+              <span class="contribution-badge">Collaborative contribution</span>
+              <h4>Chef-Dojo Recipe App</h4>
+              <p>
+                Contributed to a full-stack application that lets users
+                create, save, and organize recipes into custom categories.
+              </p>
+              <ul class="technology-list technology-list--compact">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLAlchemy</li>
+              </ul>
+              <div class="compact-project__links">
+                <a href="https://www.youtube.com/watch?v=aF0RZPqcsPo" target="_blank" rel="noreferrer">Watch demo <span
+                    aria-hidden="true">↗</span></a>
+                <a href="https://github.com/truittjanney/chef-dojo-recipe-app" target="_blank" rel="noreferrer">View
+                  source <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactme" class="contact-section" aria-labelledby="contact-title">
+      <div class="contact-section__glow" aria-hidden="true"></div>
+      <div class="contact-shell">
+        <div class="contact-copy">
+          <p class="section-kicker">Start a conversation</p>
+          <h2 id="contact-title">
+            Let’s talk about what your team is building.
+          </h2>
+          <p>
+            I’m open to full-stack, web development, cloud, and DevOps
+            opportunities. If my experience could support your team, I’d be
+            glad to connect.
+          </p>
+          <a class="contact-email" href="mailto:truittjanney93@gmail.com">
+            <span class="contact-email__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m4 7 8 6 8-6" />
+              </svg>
+            </span>
+            <span>
+              <small>Email me directly</small>
+              <strong>truittjanney93@gmail.com</strong>
+            </span>
           </a>
-          <a class="button-secondary" href="#contactme">Contact me</a>
         </div>
 
-        <ul class="hero__proof" aria-label="Professional highlights">
-          <li>
-            <span class="proof-icon" aria-hidden="true">✓</span>
-            Production-deployed applications
-          </li>
-          <li>
-            <span class="proof-icon" aria-hidden="true">✓</span>
-            AWS Certified Cloud Practitioner
-          </li>
-          <li>
-            <span class="proof-icon" aria-hidden="true">✓</span>
-            CI/CD &amp; infrastructure as code
-          </li>
-        </ul>
-      </div>
-
-      <div class="hero__visual">
-        <div class="portrait-frame">
-          <div class="portrait-frame__accent" aria-hidden="true"></div>
-          <img src="images/other_images/2023_11_profile_picture_1_edited.png" alt="T. Truitt Janney" width="404"
-            height="618" fetchpriority="high" />
-          <div class="portrait-card">
-            <span class="portrait-card__status" aria-hidden="true"></span>
-            <div>
-              <strong>Open to opportunities</strong>
-              <span>Web, full-stack, cloud &amp; DevOps</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-summary" aria-labelledby="about-summary-title">
-    <div class="about-summary__inner">
-      <div class="about-summary__heading">
-        <p class="section-kicker">What I bring</p>
-        <h2 id="about-summary-title">
-          Technical breadth. Practical ownership.
-        </h2>
-      </div>
-      <div class="about-summary__copy">
-        <p>
-          During my DevOps apprenticeship, I worked with engineering and QA
-          teams to improve release processes for React Native iOS and Android
-          applications. I supported CI/CD pipelines using GitHub Actions,
-          Fastlane, and Bash, resolved build and environment issues, and
-          helped teams deliver stable releases.
-        </p>
-        <p>
-          As an AWS Certified Cloud Practitioner with a full-stack development
-          foundation, I understand systems end to end—from application code to
-          infrastructure and automation. My background in sales and marketing
-          also helps me communicate clearly, take ownership, and connect
-          technical work to real business needs.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <div id="wrapper">
-    <!-- ####################################################### -->
-    <!-- SKILLS SECTION -->
-    <!-- ####################################################### -->
-
-    <section id="skills" class="main d-flex flex-wrap flex-column">
-      <div class="d-flex flex-column align-items-center w-100">
-        <h2 style="text-align: center; margin-bottom: -6px">Skills</h2>
-      </div>
-
-      <div class="container my-4">
-        <!-- DEVOPS & CLOUD -->
-        <div class="skill-block mb-4">
-          <h4 class="text-start mb-3">DEVOPS & CLOUD</h4>
-          <div class="row gx-3 gy-4 align-items-center">
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_ci_cd_pipelines.png" alt="CI/CD" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">CI/CD Pipelines</div>
+        <div class="contact-panel">
+          <form id="contact-form" class="contact-form">
+            <div class="form-field">
+              <label for="fullNameInput">Full name</label>
+              <input type="text" id="fullNameInput" name="fullName" autocomplete="name" placeholder="Your name"
+                required />
             </div>
 
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_terraform.png" alt="Terraform" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Terraform</div>
+            <div class="form-field">
+              <label for="emailInput">Email address</label>
+              <input type="email" id="emailInput" name="email" autocomplete="email" placeholder="you@company.com"
+                required />
             </div>
 
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_git.png" alt="Git" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Git</div>
+            <div class="form-field">
+              <label for="messageInput">Message</label>
+              <textarea id="messageInput" name="message"
+                placeholder="Tell me a little about the opportunity or project." rows="6" required></textarea>
             </div>
 
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_github_actions.png" alt="GitHub Actions" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">GitHub Actions</div>
+            <div class="form-submit-row">
+              <button type="submit" class="button-primary form-submit">
+                <span class="form-submit__label">Send message</span>
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="m7 4 6 6-6 6" />
+                </svg>
+              </button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
             </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_bash_shell_scripting.png" alt="Bash" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Bash/Shell Scripting</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_fastlane.png" alt="Fastlane" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Fastlane</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_maestro.png" alt="Maestro" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Maestro Testing</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_terminal.png" alt="Terminal" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Terminal</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_aws_cloud.png" alt="AWS" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">AWS Cloud</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- FRONTEND -->
-        <div class="skill-block mb-4">
-          <h4 class="text-start mb-3">FRONTEND</h4>
-          <div class="row gx-3 gy-4 align-items-center">
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_react_js.png" alt="React" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">React.js</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_javascript5.png" alt="JavaScript" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">JavaScript</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_css3.png" alt="CSS3" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">CSS3</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_html5.png" alt="HTML5" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">HTML5</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- BACKEND -->
-        <div class="skill-block mb-4">
-          <h4 class="text-start mb-3">BACKEND</h4>
-          <div class="row gx-3 gy-4 align-items-center">
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_node_js.png" alt="Node.js" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Node.js</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_express_js.png" alt="Express.js" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Express.js</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_rest_apis.png" alt="REST APIs" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">REST APIs</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_jwt_authentication.png" alt="JWT Authentication"
-                class="img-fluid rounded-4" style="max-width: 90px" />
-              <div class="mt-2 small">JWT Authentication</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_multer.png" alt="Multer" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Multer</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_csharp.png" alt="C#" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">C#</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- DATABASES & TOOLS -->
-        <div class="skill-block mb-4">
-          <h4 class="text-start mb-3">DATABASES & TOOLS</h4>
-          <div class="row gx-3 gy-4 align-items-center">
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_postgresql.png" alt="PostgreSQL" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">PostgreSQL</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_prisma_orm.png" alt="Prisma ORM" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Prisma ORM</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_sql.png" alt="SQL" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">SQL</div>
-            </div>
-
-            <div class="col-6 col-sm-3 text-center">
-              <img src="images/logo_images/logo_postman.png" alt="Postman" class="img-fluid rounded-4"
-                style="max-width: 90px" />
-              <div class="mt-2 small">Postman</div>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- ####################################################### -->
-    <!-- PORTFOLIO SECTION -->
-    <!-- ####################################################### -->
-
-    <div id="portfolio" class="d-flex flex-column align-items-center my-5">
-      <h2 style="text-align: center; margin-bottom: -5px">Portfolio</h2>
-    </div>
-
-    <section class="main items">
-      <!-- PROJECT: MEDIAVAULT -->
-      <article class="item">
-        <header role="img" aria-label="MediaVault albums page" style="
-              background-image: url(&quot;./images/other_images/mediavault_albums_page.png&quot;);
-              background-size: cover;
-              background-position: center;
-              background-repeat: no-repeat;
-            "></header>
-        <h3>MediaVault</h3>
-        <p>
-          MediaVault is a production-deployed full-stack application for
-          securely organizing photos and videos with private S3 storage,
-          protected albums, and authenticated user access.<br /><br />
-
-          <b>Tech Stack (Frontend):</b> React.js, JavaScript, Vite, CSS3,
-          HTML5, Fetch API, Vercel <br />
-          <br />
-
-          <b>Tech Stack (Backend):</b> Node.js, Express.js, Multer, JWT
-          Authentication, bcrypt, Railway <br />
-          <br />
-
-          <b>Tech Stack (Database):</b> PostgreSQL, Prisma ORM, Railway
-          PostgreSQL <br />
-          <br />
-
-          <b>Cloud & Infrastructure:</b> AWS (S3, SES, IAM, Route 53), S3
-          presigned URLs <br />
-          <br />
-
-          <b>*Public signup is disabled for the portfolio deployment.*</b><br /><br />
-          <b>*Project demo coming soon*</b><br /><br />
-        </p>
-
-        <ul class="actions d-flex justify-content-center">
-          <li>
-            <a href="https://mediavault.truittjanney.com" target="_blank" class="button">Live Application</a>
-          </li>
-          <li>
-            <a href="https://github.com/truittjanney/media-vault" target="_blank" class="button">GitHub Repository</a>
-          </li>
-        </ul>
-      </article>
-
-      <!-- PROJECT: CLOUD INFRASTRUCTURE PROJECT -->
-      <article class="item">
-        <header>
-          <iframe width="100%" height="100%" src="https://youtube.com/embed/VfKgAgI_g6I" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-        </header>
-        <h3>Cloud Infrastructure Project</h3>
-        <p>
-          Terraform-based AWS infrastructure for a secure multi-environment
-          static website, with CI/CD via GitHub Actions (OIDC), remote state
-          management, and monitoring/alerting using CloudWatch and SNS.
-          Enables secure, scalable, and automated deployment of a static
-          website with real-time monitoring and alerting.
-          <br /><br />
-          <b>Infrastructure Stack:</b> Terraform, AWS (S3, CloudFront, Route
-          53, ACM, IAM, CloudWatch), GitHub Actions, OIDC <br />
-          <br />
-          <b>Tech Stack (Frontend):</b> HTML, CSS, Bootstrap, JavaScript
-        </p>
-        <ul class="actions d-flex justify-content-center">
-          <li>
-            <a href="https://github.com/truittjanney/truittjanney.com-infrastructure" target="_blank"
-              class="button">GitHub Repository</a>
-          </li>
-        </ul>
-      </article>
-
-      <!-- PROJECT: ACCOUNTAPAIR -->
-      <article class="item">
-        <header>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2jly9NNo-6E"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-        </header>
-        <h3>AccountaPair</h3>
-        <p>
-          AccountaPair is a feature created for new designers and developers
-          for real-time collaboration to practice and improve their
-          programming or design skills with different challenges.
-          <br /><br />
-          <b>Tech Stack:</b> Firebase, CSS, JavaScript, React.
-        </p>
-        <ul class="actions d-flex justify-content-center">
-          <li>
-            <a href="https://github.com/makeitMVPadmin/LAP5_Accountabuddy" target="_blank" class="button">GitHub
-              Repository</a>
-          </li>
-        </ul>
-      </article>
-
-      <!-- PROJECT: CHEF-DOJO RECIPE APP -->
-      <article class="item">
-        <header>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aF0RZPqcsPo"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-        </header>
-        <h3>Chef-Dojo Recipe App</h3>
-        <p>
-          Chef-Dojo is a full-stack application built with the purpose of
-          users creating and storing their favorite recipes. The users can
-          also create their own categories for recipe organization.
-          <br /><br />
-          <b>Tech Stack:</b> HTML, CSS, Bootstrap, JavaScript, React, Python,
-          Flask, SQLAlchemy.
-        </p>
-        <ul class="actions d-flex justify-content-center">
-          <li>
-            <a href="https://github.com/truittjanney/chef-dojo-recipe-app" target="_blank" class="button">GitHub
-              Repository</a>
-          </li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- ####################################################### -->
-    <!-- CONTACT ME SECTION -->
-    <!-- ####################################################### -->
-
-    <section id="contactme" class="main special">
-      <div class="d-flex flex-column align-items-center mb-5">
-        <h2 style="text-align: center; margin-bottom: -5px">Contact Me</h2>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="footer-identity">
+        <img src="images/favicon_images/favicon_footer.png" alt="" width="48" height="48" />
+        <div>
+          <strong>T. Truitt Janney</strong>
+          <span>Full-stack development · Cloud · DevOps</span>
+        </div>
       </div>
-      <p>
-        I’d love to chat with you! Are you looking for someone to join your
-        team? Or maybe you’ve got a cool project in mind? Even though I'm
-        temporarily not seeking collaborations right now, I’m always open to
-        connecting with other developers and learning about new opportunities.
-      </p>
-      <p>
-        Send me a message below or email me at:<br />
-        truittjanney93@gmail.com<br />
+
+      <p class="footer-proof">
+        Built with HTML, CSS, and JavaScript. Deployed on AWS with Terraform
+        and GitHub Actions.
       </p>
 
-      <!-- CONTACT FORM -->
-
-      <div class="contact-form px-5 mx-sm-5 col-12">
-        <form id="contact-form">
-          <div class="mb-3">
-            <label for="fullNameInput" class="form-label"></label>
-            <input type="name" class="form-control col-sm" id="fullNameInput" placeholder="Full Name" required />
-          </div>
-
-          <label for="emailInput" class="form-label"></label>
-          <input type="email" class="form-control col-sm" id="emailInput" placeholder="Email" />
-
-          <div class="mb-3">
-            <label for="messageInput" class="form-label"></label>
-            <textarea class="form-control col-sm" id="messageInput" placeholder="Message" rows="3"></textarea>
-            <div class="actions d-flex justify-content-center justify-content-sm-start mt-3">
-              <button type="submit" class="button big">Submit</button>
-            </div>
-          </div>
-        </form>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/toddtruittjanney/" target="_blank" rel="noreferrer">LinkedIn <span
+            aria-hidden="true">↗</span></a>
+        <a href="https://github.com/truittjanney" target="_blank" rel="noreferrer">GitHub <span
+            aria-hidden="true">↗</span></a>
+        <a href="#about">Back to top <span aria-hidden="true">↑</span></a>
       </div>
-    </section>
-
-    <footer id="footer">
-      <div class="logo">
-        <img src="images/favicon_images/favicon_footer.png" alt="Logo" width="100rem" height="100rem"
-          style="margin-bottom: 5rem" />
-      </div>
-    </footer>
-  </div>
-
+    </div>
+    <div class="site-footer__bottom">
+      <p>© <span id="current-year">2026</span> T. Truitt Janney</p>
+    </div>
+  </footer>
   <!-- SCRIPTS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

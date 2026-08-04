@@ -38,26 +38,58 @@ if (navToggle && primaryNavigation) {
   });
 }
 
-const contactForm = document.querySelector("#contact-form");
+document.querySelectorAll("[data-video-thumbnail]").forEach((thumbnail) => {
+  const hideBrokenThumbnail = () => {
+    if (thumbnail.complete && thumbnail.naturalWidth === 0) {
+      thumbnail.hidden = true;
+    }
+  };
 
-if (contactForm && window.emailjs) {
+  thumbnail.addEventListener("error", hideBrokenThumbnail);
+  hideBrokenThumbnail();
+});
+
+const contactForm = document.querySelector("#contact-form");
+const formStatus = document.querySelector("#form-status");
+
+if (window.emailjs) {
   emailjs.init({
     publicKey: "WvmZY4h-HkHU4wTzj",
   });
+}
 
+function updateFormStatus(message, state = "") {
+  if (!formStatus) return;
+
+  formStatus.textContent = message;
+  formStatus.classList.remove("is-success", "is-error");
+  if (state) formStatus.classList.add(`is-${state}`);
+}
+
+if (contactForm) {
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const submitButton = contactForm.querySelector('button[type="submit"]');
-    const originalButtonText = submitButton.textContent;
+    const submitLabel = submitButton.querySelector(".form-submit__label");
+    const originalButtonText = submitLabel.textContent;
     const fullName = document.querySelector("#fullNameInput").value.trim();
     const email = document.querySelector("#emailInput").value.trim();
     const message = document.querySelector("#messageInput").value.trim();
 
-    submitButton.disabled = true;
-    submitButton.textContent = "Sending...";
+    if (!window.emailjs) {
+      updateFormStatus(
+        "The form could not load. Please email me directly instead.",
+        "error",
+      );
+      return;
+    }
 
     try {
+      submitButton.disabled = true;
+      submitLabel.textContent = "Sending...";
+      updateFormStatus("Sending your message...");
+
       await emailjs.send("service_ya1txb9", "template_i1fti0g", {
         from_name: fullName,
         from_email: email,
@@ -65,13 +97,25 @@ if (contactForm && window.emailjs) {
       });
 
       contactForm.reset();
-      alert("Message sent successfully!");
+      updateFormStatus(
+        "Message sent successfully. I’ll get back to you soon.",
+        "success",
+      );
     } catch (error) {
-      alert("Failed to send your message. Please try again.");
+      updateFormStatus(
+        "Your message could not be sent. Please try again or email me directly.",
+        "error",
+      );
       console.error("EmailJS error:", error);
     } finally {
       submitButton.disabled = false;
-      submitButton.textContent = originalButtonText;
+      submitLabel.textContent = originalButtonText;
     }
   });
+}
+
+const currentYear = document.querySelector("#current-year");
+
+if (currentYear) {
+  currentYear.textContent = String(new Date().getFullYear());
 }
