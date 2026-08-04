@@ -1,504 +1,533 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="manifest" href="manifest.json" />
-    <title>truittjanney.com</title>
-    <meta charset="utf-8" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets/css/button.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/form.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/icon.css" />
-    <link rel="stylesheet" href="assets/css/image.css" />
-    <link rel="stylesheet" href="assets/css/item.css" />
-    <link rel="stylesheet" href="assets/css/list.css" />
-    <link rel="stylesheet" href="assets/css/table.css" />
-    <link rel="stylesheet" href="assets/css/nav.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Portfolio of T. Truitt Janney, a full-stack developer with cloud and DevOps experience building web applications, CI/CD pipelines, and AWS infrastructure." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#07111f" />
+  <title>T. Truitt Janney | Full-Stack, Cloud &amp; DevOps</title>
 
-    <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="images/favicon_images/favicon_96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon_images/favicon.svg" />
-    <link rel="shortcut icon" href="images/favicon_images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_images/favicon_apple-touch-icon_180x180.png" />
-    <meta name="apple-mobile-web-app-title" content="truittjanney.com" />
-    <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="stylesheet" href="assets/css/button.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/form.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/icon.css" />
+  <link rel="stylesheet" href="assets/css/image.css" />
+  <link rel="stylesheet" href="assets/css/item.css" />
+  <link rel="stylesheet" href="assets/css/list.css" />
+  <link rel="stylesheet" href="assets/css/table.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <script src="https://kit.fontawesome.com/2042281ab1.js" crossorigin="anonymous"></script>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="images/favicon_images/favicon_96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon_images/favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon_images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_images/favicon_apple-touch-icon_180x180.png" />
+  <meta name="apple-mobile-web-app-title" content="truittjanney.com" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
 
 <body>
-    <!-- ####################################################### -->
-    <!-- NAVBAR -->
-    <!-- ####################################################### -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#about" aria-label="T. Truitt Janney, back to introduction">
+        <img class="brand__mark" src="images/favicon_images/favicon_footer.png" alt="" width="44" height="44" />
+        <span class="brand__name">T. Truitt Janney</span>
+      </a>
 
-    <!-- SOCIAL MEDIA ICONS -->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <ul class="icons mb-0 center-icons">
-                <li>
-                    <a href="https://www.linkedin.com/in/toddtruittjanney/" target="_blank" class="icon fa-linkedin">
-                        <span class="label">LinkedIn</span></a>
-                </li>
-                <li>
-                    <a href="https://github.com/truittjanney" target="_blank" class="icon fa-brands fa-github"
-                        aria-hidden="true">
-                        <span class="label">GitHub</span></a>
-                </li>
-            </ul>
+      <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contactme">Contact</a>
+      </nav>
 
-            <!-- NAVIGATION BUTTONS -->
-            <div class="navbar-section-buttons d-none d-sm-flex">
-                <a class="nav-link" aria-current="page" href="#about">About</a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-                <a class="nav-link" href="#contactme"
-                    style="margin-right: 10px; /*! display: flex; */ text-wrap: nowrap">Contact Me</a>
-            </div>
-        </div>
-    </nav>
+      <div class="site-header__actions">
+        <a class="social-link" href="https://www.linkedin.com/in/toddtruittjanney/" target="_blank" rel="noreferrer"
+          aria-label="LinkedIn profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.86-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.33V8.98h3.42v1.57h.05c.47-.9 1.64-1.86 3.37-1.86 3.6 0 4.27 2.37 4.27 5.46v6.3ZM5.31 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.53V8.98h3.56v11.47Z" />
+          </svg>
+        </a>
+        <a class="social-link" href="https://github.com/truittjanney" target="_blank" rel="noreferrer"
+          aria-label="GitHub profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.29-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18A10.9 10.9 0 0 1 12 6.12c.98 0 1.96.13 2.87.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.07.79 2.16v3.24c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z" />
+          </svg>
+        </a>
+        <a class="header-cta" href="#contactme">Let's talk</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"
+          aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <!-- ####################################################### -->
-    <!-- HEADER -->
-    <!-- ####################################################### -->
-    <span id="about"></span>
-    <header id="header">
-        <div class="inner">
+  <section id="about" class="hero" aria-labelledby="hero-title">
+    <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
 
-            <!-- ####################################################### -->
-            <!-- ABOUT ME SECTION -->
-            <!-- ####################################################### -->
-            <div class="profile-picture-container">
-                <img src="images/other_images/2023_11_profile_picture_1_edited.png" alt="Profile Picture"
-                    class="profile-image" />
-            </div>
-        </div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">
+          Full-stack development <span aria-hidden="true">/</span> Cloud
+          <span aria-hidden="true">/</span> DevOps
+        </p>
+        <h1 id="hero-title" class="hero__title">
+          Full-Stack Developer with
+          <span>Cloud &amp; DevOps Experience.</span>
+        </h1>
+        <p class="hero__lead">
+          I build reliable web applications, automate delivery pipelines, and
+          deploy secure AWS infrastructure—connecting product development with
+          the systems that support it.
+        </p>
 
-        <h1>T. Truitt Janney</h1>
-        <div class="bio">
-            <p class="bio-1">
-                Hi, I’m Truitt — I’m a DevOps & Cloud Engineer with hands-on experience building and optimizing
-                CI/CD
-                pipelines, automating mobile app deployments, and supporting cloud-based workflows in production
-                environments.
-            </p>
-            <p class="bio-2">
-                During my DevOps apprenticeship, I worked directly with engineering and QA teams to streamline
-                release processes for React Native iOS and Android applications. I supported and improved CI/CD
-                pipelines using
-                GitHub Actions, Fastlane, and Bash scripting, helped troubleshoot build and environment issues, and
-                collaborated
-                cross-functionally to ensure stable releases.
-            </p>
-            <p class="bio-3">
-                I’m AWS Certified (Cloud Practitioner) with practical experience deploying and configuring cloud
-                resources, and
-                I bring a strong foundation in full-stack development that helps me understand systems end-to-end — from
-                application code to infrastructure and automation.
-            </p>
-            <p class="bio-4">
-                With a background in sales and marketing, I communicate clearly, take ownership of problems, and focus
-                on
-                building reliable systems that support real business needs.
-            </p>
-            <p class="bio-5">
-                I’m excited to continue growing in DevOps and Cloud Engineering, contributing to teams that value
-                automation,
-                reliability, and continuous improvement.
-            </p>
-            <a href="https://templated.co"></a>
-        </div>
-    </header>
-
-    <div id="wrapper">
-
-        <!-- ####################################################### -->
-        <!-- SKILLS SECTION -->
-        <!-- ####################################################### -->
-
-        <section id="skills" class="main d-flex flex-wrap flex-column">
-            <div class="d-flex flex-column align-items-center w-100">
-                <h2 style="text-align: center; margin-bottom: -6px">Skills</h2>
-            </div>
-
-            <div class="container my-4">
-
-                <!-- DEVOPS & CLOUD -->
-                <div class="skill-block mb-4">
-                    <h4 class="text-start mb-3">DEVOPS & CLOUD</h4>
-                    <div class="row gx-3 gy-4 align-items-center">
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_ci_cd_pipelines.png" alt="CI/CD"
-                                class="img-fluid rounded-4" style="max-width:90px" />
-                            <div class="mt-2 small">CI/CD Pipelines</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_terraform.png" alt="Terraform" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">Terraform</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_git.png" alt="Git" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">Git</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_github_actions.png" alt="GitHub Actions"
-                                class="img-fluid rounded-4" style="max-width:90px" />
-                            <div class="mt-2 small">GitHub Actions</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_bash_shell_scripting.png" alt="Bash"
-                                class="img-fluid rounded-4" style="max-width:90px" />
-                            <div class="mt-2 small">Bash/Shell Scripting</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_fastlane.png" alt="Fastlane" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">Fastlane</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_maestro.png" alt="Maestro" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">Maestro Testing</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_terminal.png" alt="Terminal" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">Terminal</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_aws_cloud.png" alt="AWS" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">AWS Cloud</div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- FRONTEND -->
-                <div class="skill-block mb-4">
-                    <h4 class="text-start mb-3">FRONTEND</h4>
-                    <div class="row gx-3 gy-4 align-items-center">
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_react_js.png" alt="React" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">React.js</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_javascript5.png" alt="JavaScript"
-                                class="img-fluid rounded-4" style="max-width:90px" />
-                            <div class="mt-2 small">JavaScript</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_css3.png" alt="CSS3" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">CSS3</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_html5.png" alt="HTML5" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">HTML5</div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- BACKEND -->
-                <div class="skill-block mb-4">
-                    <h4 class="text-start mb-3">BACKEND</h4>
-                    <div class="row gx-3 gy-4 align-items-center">
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_node_js.png" alt="Node.js" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">Node.js</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_express_js.png" alt="Express.js"
-                                class="img-fluid rounded-4" style="max-width:90px" />
-                            <div class="mt-2 small">Express.js</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_rest_apis.png" alt="REST APIs" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">REST APIs</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_jwt_authentication.png" alt="JWT Authentication"
-                                class="img-fluid rounded-4" style="max-width:90px" />
-                            <div class="mt-2 small">JWT Authentication</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_multer.png" alt="Multer" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">Multer</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_csharp.png" alt="C#" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">C#</div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- DATABASES & TOOLS -->
-                <div class="skill-block mb-4">
-                    <h4 class="text-start mb-3">DATABASES & TOOLS</h4>
-                    <div class="row gx-3 gy-4 align-items-center">
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_postgresql.png" alt="PostgreSQL"
-                                class="img-fluid rounded-4" style="max-width:90px" />
-                            <div class="mt-2 small">PostgreSQL</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_prisma_orm.png" alt="Prisma ORM"
-                                class="img-fluid rounded-4" style="max-width:90px" />
-                            <div class="mt-2 small">Prisma ORM</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_sql.png" alt="SQL" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">SQL</div>
-                        </div>
-
-                        <div class="col-6 col-sm-3 text-center">
-                            <img src="images/logo_images/logo_postman.png" alt="Postman" class="img-fluid rounded-4"
-                                style="max-width:90px" />
-                            <div class="mt-2 small">Postman</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ####################################################### -->
-        <!-- PORTFOLIO SECTION -->
-        <!-- ####################################################### -->
-
-        <div id="portfolio" class="d-flex flex-column align-items-center my-5">
-            <h2 style="text-align: center; margin-bottom: -5px">Portfolio</h2>
+        <div class="hero__actions">
+          <a class="button-primary" href="#portfolio">
+            View my projects
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="m7 4 6 6-6 6" />
+            </svg>
+          </a>
+          <a class="button-secondary" href="#contactme">Contact me</a>
         </div>
 
-        <section class="main items">
+        <ul class="hero__proof" aria-label="Professional highlights">
+          <li>
+            <span class="proof-icon" aria-hidden="true">✓</span>
+            Production-deployed applications
+          </li>
+          <li>
+            <span class="proof-icon" aria-hidden="true">✓</span>
+            AWS Certified Cloud Practitioner
+          </li>
+          <li>
+            <span class="proof-icon" aria-hidden="true">✓</span>
+            CI/CD &amp; infrastructure as code
+          </li>
+        </ul>
+      </div>
 
-            <!-- PROJECT: MEDIAVAULT -->
-            <article class="item">
-                <header role="img" aria-label="MediaVault albums page"
-                    style="background-image: url('./images/other_images/mediavault_albums_page.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-                </header>
-                <h3>MediaVault</h3>
-                <p>
-                    MediaVault is a production-deployed full-stack application for securely organizing photos and videos
-                    with private S3 storage, protected albums, and authenticated user access.<br /><br />
-
-                    <b>Tech Stack (Frontend):</b> React.js, JavaScript, Vite, CSS3, HTML5, Fetch API, Vercel <br />
-                    <br />
-
-                    <b>Tech Stack (Backend):</b> Node.js, Express.js, Multer, JWT Authentication, bcrypt, Railway <br />
-                    <br />
-
-                    <b>Tech Stack (Database):</b> PostgreSQL, Prisma ORM, Railway PostgreSQL <br /> <br />
-
-                    <b>Cloud & Infrastructure:</b> AWS (S3, SES, IAM, Route 53), S3 presigned URLs <br />
-                    <br />
-
-                    <b>*Public signup is disabled for the portfolio deployment.*</b><br /><br />
-                    <b>*Project demo coming soon*</b><br /><br />
-
-                </p>
-
-                <ul class="actions d-flex justify-content-center">
-                    <li>
-                        <a href="https://mediavault.truittjanney.com" target="_blank" class="button">Live
-                            Application</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/truittjanney/media-vault" target="_blank" class="button">GitHub
-                            Repository</a>
-                    </li>
-                </ul>
-            </article>
-
-            <!-- PROJECT: CLOUD INFRASTRUCTURE PROJECT -->
-            <article class="item">
-                <header>
-                    <iframe width="100%" height="100%" src="https://youtube.com/embed/VfKgAgI_g6I"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </header>
-                <h3>Cloud Infrastructure Project</h3>
-                <p>
-                    Terraform-based AWS infrastructure for a secure multi-environment static website, with CI/CD via
-                    GitHub Actions (OIDC), remote state management, and monitoring/alerting using CloudWatch and SNS.
-                    Enables secure, scalable, and automated deployment of a static website with real-time monitoring and
-                    alerting.
-                    <br /><br />
-                    <b>Infrastructure Stack:</b> Terraform, AWS (S3, CloudFront, Route 53, ACM, IAM, CloudWatch),
-                    GitHub Actions, OIDC <br /> <br />
-                    <b>Tech Stack (Frontend):</b> HTML, CSS, Bootstrap, JavaScript
-                </p>
-                <ul class="actions d-flex justify-content-center">
-                    <li>
-                        <a href="https://github.com/truittjanney/truittjanney.com-infrastructure" target="_blank"
-                            class="button">GitHub
-                            Repository</a>
-                    </li>
-                </ul>
-            </article>
-
-            <!-- PROJECT: ACCOUNTAPAIR -->
-            <article class="item">
-                <header>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2jly9NNo-6E"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </header>
-                <h3>AccountaPair</h3>
-                <p>
-                    AccountaPair is a feature created for new designers and developers
-                    for real-time collaboration to practice and improve their
-                    programming or design skills with different challenges.
-                    <br /><br />
-                    <b>Tech Stack:</b> Firebase, CSS, JavaScript, React.
-                </p>
-                <ul class="actions d-flex justify-content-center">
-                    <li>
-                        <a href="https://github.com/makeitMVPadmin/LAP5_Accountabuddy" target="_blank"
-                            class="button">GitHub Repository</a>
-                    </li>
-                </ul>
-            </article>
-
-            <!-- PROJECT: CHEF-DOJO RECIPE APP -->
-            <article class="item">
-                <header>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aF0RZPqcsPo"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </header>
-                <h3>Chef-Dojo Recipe App</h3>
-                <p>
-                    Chef-Dojo is a full-stack application built with the purpose of
-                    users creating and storing their favorite recipes. The users can
-                    also create their own categories for recipe organization.
-                    <br /><br />
-                    <b>Tech Stack:</b> HTML, CSS, Bootstrap, JavaScript, React, Python,
-                    Flask, SQLAlchemy.
-                </p>
-                <ul class="actions d-flex justify-content-center">
-                    <li>
-                        <a href="https://github.com/truittjanney/chef-dojo-recipe-app" target="_blank"
-                            class="button">GitHub
-                            Repository</a>
-                    </li>
-                </ul>
-            </article>
-
-        </section>
-
-        <!-- ####################################################### -->
-        <!-- CONTACT ME SECTION -->
-        <!-- ####################################################### -->
-
-        <section id="contactme" class="main special">
-            <div class="d-flex flex-column align-items-center mb-5">
-                <h2 style="text-align: center; margin-bottom: -5px">Contact Me</h2>
+      <div class="hero__visual">
+        <div class="portrait-frame">
+          <div class="portrait-frame__accent" aria-hidden="true"></div>
+          <img src="images/other_images/2023_11_profile_picture_1_edited.png" alt="T. Truitt Janney" width="404"
+            height="618" fetchpriority="high" />
+          <div class="portrait-card">
+            <span class="portrait-card__status" aria-hidden="true"></span>
+            <div>
+              <strong>Open to opportunities</strong>
+              <span>Web, full-stack, cloud &amp; DevOps</span>
             </div>
-            <p>
-                I’d love to chat with you! Are you looking for someone to join your team? Or maybe you’ve got a cool
-                project in mind? Even though I'm temporarily not seeking collaborations right now, I’m always open to
-                connecting
-                with other developers and learning about new opportunities.
-            </p>
-            <p>
-                Send me a message below or email me at:<br />
-                truittjanney93@gmail.com<br />
-            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <!-- CONTACT FORM -->
+  <section class="about-summary" aria-labelledby="about-summary-title">
+    <div class="about-summary__inner">
+      <div class="about-summary__heading">
+        <p class="section-kicker">What I bring</p>
+        <h2 id="about-summary-title">
+          Technical breadth. Practical ownership.
+        </h2>
+      </div>
+      <div class="about-summary__copy">
+        <p>
+          During my DevOps apprenticeship, I worked with engineering and QA
+          teams to improve release processes for React Native iOS and Android
+          applications. I supported CI/CD pipelines using GitHub Actions,
+          Fastlane, and Bash, resolved build and environment issues, and
+          helped teams deliver stable releases.
+        </p>
+        <p>
+          As an AWS Certified Cloud Practitioner with a full-stack development
+          foundation, I understand systems end to end—from application code to
+          infrastructure and automation. My background in sales and marketing
+          also helps me communicate clearly, take ownership, and connect
+          technical work to real business needs.
+        </p>
+      </div>
+    </div>
+  </section>
 
-            <div class="contact-form px-5 mx-sm-5 col-12">
-                <form id="contact-form">
-                    <div class="mb-3">
-                        <label for="fullNameInput" class="form-label"></label>
-                        <input type="name" class="form-control col-sm" id="fullNameInput" placeholder="Full Name"
-                            required />
-                    </div>
+  <div id="wrapper">
+    <!-- ####################################################### -->
+    <!-- SKILLS SECTION -->
+    <!-- ####################################################### -->
 
-                    <label for="emailInput" class="form-label"></label>
-                    <input type="email" class="form-control col-sm" id="emailInput" placeholder="Email" />
+    <section id="skills" class="main d-flex flex-wrap flex-column">
+      <div class="d-flex flex-column align-items-center w-100">
+        <h2 style="text-align: center; margin-bottom: -6px">Skills</h2>
+      </div>
 
-                    <div class="mb-3">
-                        <label for="messageInput" class="form-label"></label>
-                        <textarea class="form-control col-sm" id="messageInput" placeholder="Message"
-                            rows="3"></textarea>
-                        <div class="actions d-flex justify-content-center justify-content-sm-start mt-3">
-                            <button type="submit" class="button big">Submit</button>
-                        </div>
-                    </div>
-                </form>
+      <div class="container my-4">
+        <!-- DEVOPS & CLOUD -->
+        <div class="skill-block mb-4">
+          <h4 class="text-start mb-3">DEVOPS & CLOUD</h4>
+          <div class="row gx-3 gy-4 align-items-center">
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_ci_cd_pipelines.png" alt="CI/CD" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">CI/CD Pipelines</div>
             </div>
-        </section>
 
-        <footer id="footer">
-            <div class="logo">
-                <img src="images/favicon_images/favicon_footer.png" alt="Logo" width="100rem" height="100rem"
-                    style="margin-bottom: 5rem" />
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_terraform.png" alt="Terraform" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Terraform</div>
             </div>
-        </footer>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_git.png" alt="Git" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Git</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_github_actions.png" alt="GitHub Actions" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">GitHub Actions</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_bash_shell_scripting.png" alt="Bash" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Bash/Shell Scripting</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_fastlane.png" alt="Fastlane" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Fastlane</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_maestro.png" alt="Maestro" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Maestro Testing</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_terminal.png" alt="Terminal" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Terminal</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_aws_cloud.png" alt="AWS" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">AWS Cloud</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FRONTEND -->
+        <div class="skill-block mb-4">
+          <h4 class="text-start mb-3">FRONTEND</h4>
+          <div class="row gx-3 gy-4 align-items-center">
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_react_js.png" alt="React" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">React.js</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_javascript5.png" alt="JavaScript" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">JavaScript</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_css3.png" alt="CSS3" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">CSS3</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_html5.png" alt="HTML5" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">HTML5</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BACKEND -->
+        <div class="skill-block mb-4">
+          <h4 class="text-start mb-3">BACKEND</h4>
+          <div class="row gx-3 gy-4 align-items-center">
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_node_js.png" alt="Node.js" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Node.js</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_express_js.png" alt="Express.js" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Express.js</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_rest_apis.png" alt="REST APIs" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">REST APIs</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_jwt_authentication.png" alt="JWT Authentication"
+                class="img-fluid rounded-4" style="max-width: 90px" />
+              <div class="mt-2 small">JWT Authentication</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_multer.png" alt="Multer" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Multer</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_csharp.png" alt="C#" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">C#</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DATABASES & TOOLS -->
+        <div class="skill-block mb-4">
+          <h4 class="text-start mb-3">DATABASES & TOOLS</h4>
+          <div class="row gx-3 gy-4 align-items-center">
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_postgresql.png" alt="PostgreSQL" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">PostgreSQL</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_prisma_orm.png" alt="Prisma ORM" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Prisma ORM</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_sql.png" alt="SQL" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">SQL</div>
+            </div>
+
+            <div class="col-6 col-sm-3 text-center">
+              <img src="images/logo_images/logo_postman.png" alt="Postman" class="img-fluid rounded-4"
+                style="max-width: 90px" />
+              <div class="mt-2 small">Postman</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ####################################################### -->
+    <!-- PORTFOLIO SECTION -->
+    <!-- ####################################################### -->
+
+    <div id="portfolio" class="d-flex flex-column align-items-center my-5">
+      <h2 style="text-align: center; margin-bottom: -5px">Portfolio</h2>
     </div>
 
-    <!-- SCRIPTS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "WvmZY4h-HkHU4wTzj",
-            });
-        })();
-    </script>
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <section class="main items">
+      <!-- PROJECT: MEDIAVAULT -->
+      <article class="item">
+        <header role="img" aria-label="MediaVault albums page" style="
+              background-image: url(&quot;./images/other_images/mediavault_albums_page.png&quot;);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+            "></header>
+        <h3>MediaVault</h3>
+        <p>
+          MediaVault is a production-deployed full-stack application for
+          securely organizing photos and videos with private S3 storage,
+          protected albums, and authenticated user access.<br /><br />
+
+          <b>Tech Stack (Frontend):</b> React.js, JavaScript, Vite, CSS3,
+          HTML5, Fetch API, Vercel <br />
+          <br />
+
+          <b>Tech Stack (Backend):</b> Node.js, Express.js, Multer, JWT
+          Authentication, bcrypt, Railway <br />
+          <br />
+
+          <b>Tech Stack (Database):</b> PostgreSQL, Prisma ORM, Railway
+          PostgreSQL <br />
+          <br />
+
+          <b>Cloud & Infrastructure:</b> AWS (S3, SES, IAM, Route 53), S3
+          presigned URLs <br />
+          <br />
+
+          <b>*Public signup is disabled for the portfolio deployment.*</b><br /><br />
+          <b>*Project demo coming soon*</b><br /><br />
+        </p>
+
+        <ul class="actions d-flex justify-content-center">
+          <li>
+            <a href="https://mediavault.truittjanney.com" target="_blank" class="button">Live Application</a>
+          </li>
+          <li>
+            <a href="https://github.com/truittjanney/media-vault" target="_blank" class="button">GitHub Repository</a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- PROJECT: CLOUD INFRASTRUCTURE PROJECT -->
+      <article class="item">
+        <header>
+          <iframe width="100%" height="100%" src="https://youtube.com/embed/VfKgAgI_g6I" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </header>
+        <h3>Cloud Infrastructure Project</h3>
+        <p>
+          Terraform-based AWS infrastructure for a secure multi-environment
+          static website, with CI/CD via GitHub Actions (OIDC), remote state
+          management, and monitoring/alerting using CloudWatch and SNS.
+          Enables secure, scalable, and automated deployment of a static
+          website with real-time monitoring and alerting.
+          <br /><br />
+          <b>Infrastructure Stack:</b> Terraform, AWS (S3, CloudFront, Route
+          53, ACM, IAM, CloudWatch), GitHub Actions, OIDC <br />
+          <br />
+          <b>Tech Stack (Frontend):</b> HTML, CSS, Bootstrap, JavaScript
+        </p>
+        <ul class="actions d-flex justify-content-center">
+          <li>
+            <a href="https://github.com/truittjanney/truittjanney.com-infrastructure" target="_blank"
+              class="button">GitHub Repository</a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- PROJECT: ACCOUNTAPAIR -->
+      <article class="item">
+        <header>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2jly9NNo-6E"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </header>
+        <h3>AccountaPair</h3>
+        <p>
+          AccountaPair is a feature created for new designers and developers
+          for real-time collaboration to practice and improve their
+          programming or design skills with different challenges.
+          <br /><br />
+          <b>Tech Stack:</b> Firebase, CSS, JavaScript, React.
+        </p>
+        <ul class="actions d-flex justify-content-center">
+          <li>
+            <a href="https://github.com/makeitMVPadmin/LAP5_Accountabuddy" target="_blank" class="button">GitHub
+              Repository</a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- PROJECT: CHEF-DOJO RECIPE APP -->
+      <article class="item">
+        <header>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aF0RZPqcsPo"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </header>
+        <h3>Chef-Dojo Recipe App</h3>
+        <p>
+          Chef-Dojo is a full-stack application built with the purpose of
+          users creating and storing their favorite recipes. The users can
+          also create their own categories for recipe organization.
+          <br /><br />
+          <b>Tech Stack:</b> HTML, CSS, Bootstrap, JavaScript, React, Python,
+          Flask, SQLAlchemy.
+        </p>
+        <ul class="actions d-flex justify-content-center">
+          <li>
+            <a href="https://github.com/truittjanney/chef-dojo-recipe-app" target="_blank" class="button">GitHub
+              Repository</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ####################################################### -->
+    <!-- CONTACT ME SECTION -->
+    <!-- ####################################################### -->
+
+    <section id="contactme" class="main special">
+      <div class="d-flex flex-column align-items-center mb-5">
+        <h2 style="text-align: center; margin-bottom: -5px">Contact Me</h2>
+      </div>
+      <p>
+        I’d love to chat with you! Are you looking for someone to join your
+        team? Or maybe you’ve got a cool project in mind? Even though I'm
+        temporarily not seeking collaborations right now, I’m always open to
+        connecting with other developers and learning about new opportunities.
+      </p>
+      <p>
+        Send me a message below or email me at:<br />
+        truittjanney93@gmail.com<br />
+      </p>
+
+      <!-- CONTACT FORM -->
+
+      <div class="contact-form px-5 mx-sm-5 col-12">
+        <form id="contact-form">
+          <div class="mb-3">
+            <label for="fullNameInput" class="form-label"></label>
+            <input type="name" class="form-control col-sm" id="fullNameInput" placeholder="Full Name" required />
+          </div>
+
+          <label for="emailInput" class="form-label"></label>
+          <input type="email" class="form-control col-sm" id="emailInput" placeholder="Email" />
+
+          <div class="mb-3">
+            <label for="messageInput" class="form-label"></label>
+            <textarea class="form-control col-sm" id="messageInput" placeholder="Message" rows="3"></textarea>
+            <div class="actions d-flex justify-content-center justify-content-sm-start mt-3">
+              <button type="submit" class="button big">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="logo">
+        <img src="images/favicon_images/favicon_footer.png" alt="Logo" width="100rem" height="100rem"
+          style="margin-bottom: 5rem" />
+      </div>
+    </footer>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

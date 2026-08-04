@@ -1,87 +1,77 @@
-/*
-	Epilogue by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+"use strict";
 
-emailjs.init("WvmZY4h-HkHU4wTzj");
+const navToggle = document.querySelector(".nav-toggle");
+const primaryNavigation = document.querySelector("#primary-navigation");
 
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-	event.preventDefault();
-	console.log("Form submitted");
+function closeNavigation() {
+  if (!navToggle || !primaryNavigation) return;
 
-    // Get form data.
-    const fullName = document.getElementById('fullNameInput').value;
-    const email = document.getElementById('emailInput').value;
-    const message = document.getElementById('messageInput').value;
+  navToggle.setAttribute("aria-expanded", "false");
+  navToggle.setAttribute("aria-label", "Open navigation menu");
+  primaryNavigation.classList.remove("is-open");
+  document.body.classList.remove("nav-open");
+}
 
-	console.log(fullName, email, message);
+if (navToggle && primaryNavigation) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
 
-	emailjs.send("service_ya1txb9", "template_i1fti0g", {
-		from_name: fullName,
-		from_email: email,
-		message: message,
-	})
-	.then(function (response) {
-		alert("Message sent successfully!");
-}, function (error) {
-	alert("Failed to send your message. Please try again.");
-	console.error("EmailJS Error:", error);
-	});
-});
+    navToggle.setAttribute("aria-expanded", String(!isOpen));
+    navToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Open navigation menu" : "Close navigation menu",
+    );
+    primaryNavigation.classList.toggle("is-open", !isOpen);
+    document.body.classList.toggle("nav-open", !isOpen);
+  });
 
-(function($) {
+  primaryNavigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeNavigation);
+  });
 
-	skel.breakpoints({
-		xlarge: '(max-width: 1680px)',
-		large: '(max-width: 1280px)',
-		medium: '(max-width: 980px)',
-		small: '(max-width: 736px)',
-		xsmall: '(max-width: 480px)',
-		xxsmall: '(max-width: 360px)'
-	});
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeNavigation();
+  });
 
-	$(function() {
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 860) closeNavigation();
+  });
+}
 
-		var	$window = $(window),
-			$body = $('body');
+const contactForm = document.querySelector("#contact-form");
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+if (contactForm && window.emailjs) {
+  emailjs.init({
+    publicKey: "WvmZY4h-HkHU4wTzj",
+  });
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.textContent;
+    const fullName = document.querySelector("#fullNameInput").value.trim();
+    const email = document.querySelector("#emailInput").value.trim();
+    const message = document.querySelector("#messageInput").value.trim();
 
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
 
-		// Items.
-			$('.item').each(function() {
+    try {
+      await emailjs.send("service_ya1txb9", "template_i1fti0g", {
+        from_name: fullName,
+        from_email: email,
+        message,
+      });
 
-				var $this = $(this),
-					$header = $this.find('header'),
-					$a = $header.find('a'),
-					$img = $header.find('img');
-
-				// Set background.
-					$a.css('background-image', 'url(' + $img.attr('src') + ')');
-
-				// Remove original image.
-					$img.remove();
-
-			});
-
-	});
-
-})(jQuery);
+      contactForm.reset();
+      alert("Message sent successfully!");
+    } catch (error) {
+      alert("Failed to send your message. Please try again.");
+      console.error("EmailJS error:", error);
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = originalButtonText;
+    }
+  });
+}
