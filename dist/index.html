@@ -25,10 +25,10 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="#about" aria-label="T. Truitt Janney, back to introduction">
+      <div class="brand">
         <img class="brand__mark" src="images/favicon_images/favicon_footer.png" alt="" width="44" height="44" />
         <span class="brand__name">T. Truitt Janney</span>
-      </a>
+      </div>
 
       <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
@@ -76,23 +76,13 @@
           </p>
           <h1 id="hero-title" class="hero__title">
             Full-Stack Developer with
-            <span>DevOps & Cloud Experience.</span>
+            <span>DevOps &amp; Cloud Experience.</span>
           </h1>
           <p class="hero__lead">
             I build reliable web applications, automate delivery pipelines,
             and deploy secure AWS infrastructure—connecting product
             development with the systems that support it.
           </p>
-
-          <!-- <div class="hero__actions">
-            <a class="button-primary" href="#portfolio">
-              View my projects
-              <svg viewBox="0 0 20 20" aria-hidden="true">
-                <path d="m7 4 6 6-6 6" />
-              </svg>
-            </a>
-            <a class="button-secondary" href="#contactme">Contact me</a>
-          </div> -->
 
           <ul class="hero__proof" aria-label="Professional highlights">
             <li>
@@ -118,8 +108,8 @@
             <div class="portrait-card">
               <span class="portrait-card__status" aria-hidden="true"></span>
               <div>
-                <strong>Status: open to opportunities</strong>
-                <span>Full-Stack, DevOps, & Cloud</span>
+                <strong>Status: Open to Opportunities</strong>
+                <span>Full-Stack · DevOps · Cloud</span>
               </div>
             </div>
           </div>
@@ -132,7 +122,7 @@
         <div class="about-summary__heading">
           <p class="section-kicker">What I bring</p>
           <h2 id="about-summary-title">
-            Full-stack foundation with DevOps and systems thinking.
+            Full-stack development backed by DevOps and systems thinking.
           </h2>
         </div>
         <div class="about-summary__copy">
@@ -147,7 +137,8 @@
             As an AWS Certified Cloud Practitioner with a full-stack
             development foundation, I understand systems end to end—from
             application code to infrastructure and automation. My background
-            in sales and marketing makes me a sharp communicator, and connect technical projects to real business needs.
+            in sales and marketing makes me a sharp communicator and helps me
+            connect technical projects to real business needs.
           </p>
         </div>
       </div>
@@ -157,12 +148,13 @@
       <div class="section-shell">
         <header class="section-heading">
           <div>
-            <p class="section-kicker">Skills & Capabilities</p>
-            <h2 id="skills-title">Skills developed through BUILDING.</h2>
+            <p class="section-kicker">Skills &amp; Capabilities</p>
+            <h2 id="skills-title">Skills developed by building real systems.</h2>
           </div>
           <p class="section-heading__copy">
-            A focused view of the technologies/tools/frameworks I have used across application
-            development, deployment automation, and cloud infrastructure.
+            A focused view of the technologies, tools, and frameworks I have used
+            across application development, deployment automation, and cloud
+            infrastructure.
           </p>
         </header>
 
@@ -176,8 +168,7 @@
                 </svg>
               </span>
               <div>
-                <!-- <span class="skill-card__label">Primary focus</span> -->
-                <h3> DevOps & Cloud</h3>
+                <h3>DevOps &amp; Cloud</h3>
               </div>
             </div>
             <p>
@@ -189,7 +180,9 @@
               <li class="skill-chip skill-chip--core">Terraform</li>
               <li class="skill-chip skill-chip--core">Git</li>
               <li class="skill-chip skill-chip--core">GitHub Actions</li>
-              <li class="skill-chip skill-chip--core">Bash/Shell Scripting</li>
+              <li class="skill-chip skill-chip--core">
+                Bash/Shell Scripting
+              </li>
               <li class="skill-chip skill-chip--core">Fastlane</li>
               <li class="skill-chip skill-chip--core">Maestro</li>
               <li class="skill-chip skill-chip--core">AWS Cloud</li>
@@ -204,7 +197,6 @@
                 </svg>
               </span>
               <div>
-                <!-- <span class="skill-card__label">User experience</span> -->
                 <h3>Frontend</h3>
               </div>
             </div>
@@ -231,7 +223,6 @@
                 </svg>
               </span>
               <div>
-                <!-- <span class="skill-card__label">Application services</span> -->
                 <h3>Backend</h3>
               </div>
             </div>
@@ -259,7 +250,6 @@
                 </svg>
               </span>
               <div>
-                <!-- <span class="skill-card__label">Data &amp; delivery</span> -->
                 <h3>Databases &amp; Tools</h3>
               </div>
             </div>
@@ -331,29 +321,55 @@
                   storage and presigned URLs.
                 </li>
               </ul>
-              <ul class="technology-list" aria-label="MediaVault technologies">
-                <li>React.js</li>
-                <li>JavaScript</li>
-                <li>Vite</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Fetch API</li>
-
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Multer</li>
-                <li>JWT Authentication</li>
-                <li>bcrypt</li>
-                <li>Railway</li>
-
-                <li>PostgreSQL</li>
-                <li>Prisma ORM</li>
-
-                <li>AWS S3</li>
-                <li>AWS SES</li>
-                <li>AWS IAM</li>
-                <li>AWS Route 53</li>
-              </ul>
+              <dl class="tech-stack" aria-label="MediaVault technology stack">
+                <div class="tech-stack__group">
+                  <dt>Frontend</dt>
+                  <dd>
+                    <ul class="technology-list">
+                      <li>React.js</li>
+                      <li>JavaScript</li>
+                      <li>Vite</li>
+                      <li>CSS</li>
+                      <li>HTML</li>
+                      <li>Fetch API</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="tech-stack__group">
+                  <dt>Backend</dt>
+                  <dd>
+                    <ul class="technology-list">
+                      <li>Node.js</li>
+                      <li>Express.js</li>
+                      <li>Multer</li>
+                      <li>JWT Authentication</li>
+                      <li>bcrypt</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="tech-stack__group">
+                  <dt>Database</dt>
+                  <dd>
+                    <ul class="technology-list">
+                      <li>PostgreSQL</li>
+                      <li>Prisma ORM</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="tech-stack__group">
+                  <dt>Cloud &amp; hosting</dt>
+                  <dd>
+                    <ul class="technology-list">
+                      <li>Vercel</li>
+                      <li>Railway</li>
+                      <li>AWS S3</li>
+                      <li>AWS SES</li>
+                      <li>AWS IAM</li>
+                      <li>AWS Route 53</li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
               <div class="project-card__actions">
                 <a class="button-primary" href="https://mediavault.truittjanney.com" target="_blank" rel="noreferrer">
                   View live application
@@ -363,7 +379,7 @@
                 </a>
                 <a class="text-link" href="https://github.com/truittjanney/media-vault" target="_blank"
                   rel="noreferrer">
-                  View source
+                  View GitHub repository
                   <span aria-hidden="true">↗</span>
                 </a>
               </div>
@@ -371,10 +387,7 @@
                 Public signup is intentionally disabled for the portfolio
                 deployment.
               </p>
-              <p class="project-note">
-                *Project demo coming soon.*
-              </p>
-              </p>
+              <p class="project-note">*Project demo coming soon.*</p>
             </div>
           </article>
 
@@ -418,17 +431,39 @@
                   long-lived AWS credentials.
                 </li>
               </ul>
-              <ul class="technology-list" aria-label="Cloud Infrastructure Project technologies">
-                <li>Terraform</li>
-                <li>AWS S3</li>
-                <li>AWS CloudFront</li>
-                <li>AWS Route 53</li>
-                <li>AWS ACM</li>
-                <li>AWS IAM</li>
-                <li>AWS CloudWatch</li>
-                <li>GitHub Actions</li>
-                <li>OIDC</li>
-              </ul>
+              <dl class="tech-stack" aria-label="Cloud Infrastructure Project technology stack">
+                <div class="tech-stack__group">
+                  <dt>Infrastructure</dt>
+                  <dd>
+                    <ul class="technology-list">
+                      <li>Terraform</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="tech-stack__group">
+                  <dt>AWS services</dt>
+                  <dd>
+                    <ul class="technology-list">
+                      <li>AWS S3</li>
+                      <li>AWS CloudFront</li>
+                      <li>AWS Route 53</li>
+                      <li>AWS ACM</li>
+                      <li>AWS IAM</li>
+                      <li>AWS CloudWatch</li>
+                      <li>AWS SNS</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="tech-stack__group">
+                  <dt>CI/CD</dt>
+                  <dd>
+                    <ul class="technology-list">
+                      <li>GitHub Actions</li>
+                      <li>OIDC</li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
               <div class="project-card__actions">
                 <a class="button-primary" href="https://www.youtube.com/watch?v=VfKgAgI_g6I" target="_blank"
                   rel="noreferrer">
@@ -439,7 +474,7 @@
                 </a>
                 <a class="text-link" href="https://github.com/truittjanney/truittjanney.com-infrastructure"
                   target="_blank" rel="noreferrer">
-                  View source
+                  View GitHub repository
                   <span aria-hidden="true">↗</span>
                 </a>
               </div>
@@ -450,7 +485,7 @@
         <div class="additional-projects__heading">
           <div>
             <p class="section-kicker">Collaborative Projects</p>
-            <h3>Teamwork makes the dream work.</h3>
+            <h3>Collaborative builds. Real Contributions.</h3>
           </div>
           <p>
             Earlier team builds that strengthened my experience contributing
@@ -475,8 +510,8 @@
               <h4>AccountaPair</h4>
               <p>
                 Contributed to a real-time collaboration experience where new
-                designers and developers are paired based on matching skillsets and practice skills through various
-                challenges.
+                designers and developers are paired based on matching
+                skillsets and practice skills through various challenges.
               </p>
               <ul class="technology-list technology-list--compact">
                 <li>React</li>
@@ -488,7 +523,8 @@
                 <a href="https://www.youtube.com/watch?v=2jly9NNo-6E" target="_blank" rel="noreferrer">Watch demo <span
                     aria-hidden="true">↗</span></a>
                 <a href="https://github.com/makeitMVPadmin/LAP5_Accountabuddy" target="_blank" rel="noreferrer">View
-                  source <span aria-hidden="true">↗</span></a>
+                  GitHub repository
+                  <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
@@ -525,7 +561,8 @@
                 <a href="https://www.youtube.com/watch?v=aF0RZPqcsPo" target="_blank" rel="noreferrer">Watch demo <span
                     aria-hidden="true">↗</span></a>
                 <a href="https://github.com/truittjanney/chef-dojo-recipe-app" target="_blank" rel="noreferrer">View
-                  source <span aria-hidden="true">↗</span></a>
+                  GitHub repository
+                  <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
@@ -542,8 +579,8 @@
             Let’s talk about what your team is building.
           </h2>
           <p>
-            I’m open to full-stack, DevOps, and cloud
-            opportunities. If my experience can support your team, I'm happy to talk.
+            I’m open to full-stack, DevOps, and cloud opportunities. If my
+            experience can support your team, I'm happy to talk.
           </p>
           <a class="contact-email" href="mailto:truittjanney93@gmail.com">
             <span class="contact-email__icon" aria-hidden="true">
