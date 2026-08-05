@@ -1,87 +1,121 @@
-/*
-	Epilogue by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+"use strict";
 
-emailjs.init("WvmZY4h-HkHU4wTzj");
+const navToggle = document.querySelector(".nav-toggle");
+const primaryNavigation = document.querySelector("#primary-navigation");
 
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-	event.preventDefault();
-	console.log("Form submitted");
+function closeNavigation() {
+  if (!navToggle || !primaryNavigation) return;
 
-    // Get form data.
-    const fullName = document.getElementById('fullNameInput').value;
-    const email = document.getElementById('emailInput').value;
-    const message = document.getElementById('messageInput').value;
+  navToggle.setAttribute("aria-expanded", "false");
+  navToggle.setAttribute("aria-label", "Open navigation menu");
+  primaryNavigation.classList.remove("is-open");
+  document.body.classList.remove("nav-open");
+}
 
-	console.log(fullName, email, message);
+if (navToggle && primaryNavigation) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
 
-	emailjs.send("service_ya1txb9", "template_i1fti0g", {
-		from_name: fullName,
-		from_email: email,
-		message: message,
-	})
-	.then(function (response) {
-		alert("Message sent successfully!");
-}, function (error) {
-	alert("Failed to send your message. Please try again.");
-	console.error("EmailJS Error:", error);
-	});
+    navToggle.setAttribute("aria-expanded", String(!isOpen));
+    navToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Open navigation menu" : "Close navigation menu",
+    );
+    primaryNavigation.classList.toggle("is-open", !isOpen);
+    document.body.classList.toggle("nav-open", !isOpen);
+  });
+
+  primaryNavigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeNavigation);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeNavigation();
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 860) closeNavigation();
+  });
+}
+
+document.querySelectorAll("[data-video-thumbnail]").forEach((thumbnail) => {
+  const hideBrokenThumbnail = () => {
+    if (thumbnail.complete && thumbnail.naturalWidth === 0) {
+      thumbnail.hidden = true;
+    }
+  };
+
+  thumbnail.addEventListener("error", hideBrokenThumbnail);
+  hideBrokenThumbnail();
 });
 
-(function($) {
+const contactForm = document.querySelector("#contact-form");
+const formStatus = document.querySelector("#form-status");
 
-	skel.breakpoints({
-		xlarge: '(max-width: 1680px)',
-		large: '(max-width: 1280px)',
-		medium: '(max-width: 980px)',
-		small: '(max-width: 736px)',
-		xsmall: '(max-width: 480px)',
-		xxsmall: '(max-width: 360px)'
-	});
+if (window.emailjs) {
+  emailjs.init({
+    publicKey: "WvmZY4h-HkHU4wTzj",
+  });
+}
 
-	$(function() {
+function updateFormStatus(message, state = "") {
+  if (!formStatus) return;
 
-		var	$window = $(window),
-			$body = $('body');
+  formStatus.textContent = message;
+  formStatus.classList.remove("is-success", "is-error");
+  if (state) formStatus.classList.add(`is-${state}`);
+}
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+if (contactForm) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const submitLabel = submitButton.querySelector(".form-submit__label");
+    const originalButtonText = submitLabel.textContent;
+    const fullName = document.querySelector("#fullNameInput").value.trim();
+    const email = document.querySelector("#emailInput").value.trim();
+    const message = document.querySelector("#messageInput").value.trim();
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+    if (!window.emailjs) {
+      updateFormStatus(
+        "The form could not load. Please email me directly instead.",
+        "error",
+      );
+      return;
+    }
 
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
+    try {
+      submitButton.disabled = true;
+      submitLabel.textContent = "Sending...";
+      updateFormStatus("Sending your message...");
 
-		// Items.
-			$('.item').each(function() {
+      await emailjs.send("service_ya1txb9", "template_i1fti0g", {
+        from_name: fullName,
+        from_email: email,
+        message,
+      });
 
-				var $this = $(this),
-					$header = $this.find('header'),
-					$a = $header.find('a'),
-					$img = $header.find('img');
+      contactForm.reset();
+      updateFormStatus(
+        "Message sent successfully. I’ll get back to you soon.",
+        "success",
+      );
+    } catch (error) {
+      updateFormStatus(
+        "Your message could not be sent. Please try again or email me directly.",
+        "error",
+      );
+      console.error("EmailJS error:", error);
+    } finally {
+      submitButton.disabled = false;
+      submitLabel.textContent = originalButtonText;
+    }
+  });
+}
 
-				// Set background.
-					$a.css('background-image', 'url(' + $img.attr('src') + ')');
+const currentYear = document.querySelector("#current-year");
 
-				// Remove original image.
-					$img.remove();
-
-			});
-
-	});
-
-})(jQuery);
+if (currentYear) {
+  currentYear.textContent = String(new Date().getFullYear());
+}
