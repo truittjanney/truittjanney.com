@@ -22,6 +22,10 @@
   <link rel="manifest" href="/site.webmanifest" />
 </head>
 
+<!-- ############################################################# -->
+<!-- HEADER / NAV BAR -->
+<!-- ############################################################# -->
+
 <body>
   <header class="site-header">
     <div class="site-header__inner">
@@ -63,6 +67,9 @@
     </div>
   </header>
 
+  <!-- ############################################################# -->
+  <!-- ABOUT ME SECTION -->
+  <!-- ############################################################# -->
   <main>
     <section id="about" class="hero" aria-labelledby="hero-title">
       <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
@@ -144,6 +151,9 @@
       </div>
     </section>
 
+    <!-- ############################################################# -->
+    <!-- SKILLS SECTION -->
+    <!-- ############################################################# -->
     <section id="skills" class="skills-section" aria-labelledby="skills-title">
       <div class="section-shell">
         <header class="section-heading">
@@ -223,7 +233,7 @@
                 </svg>
               </span>
               <div>
-                <h3>Backend</h3>
+                <h3>Backend & APIs</h3>
               </div>
             </div>
             <p>
@@ -270,6 +280,9 @@
       </div>
     </section>
 
+    <!-- ############################################################# -->
+    <!-- FEATURED PROJECTS SECTION -->
+    <!-- ############################################################# -->
     <section id="portfolio" class="projects-section" aria-labelledby="projects-title">
       <div class="section-shell">
         <header class="section-heading section-heading--projects">
@@ -284,6 +297,8 @@
         </header>
 
         <div class="featured-projects">
+
+          <!-- PROJECT: MEDIAVAULT -->
           <article class="project-card project-card--featured">
             <div class="project-card__visual project-card__visual--product">
               <div class="browser-preview">
@@ -341,9 +356,9 @@
                     <ul class="technology-list">
                       <li>Node.js</li>
                       <li>Express.js</li>
-                      <li>Multer</li>
                       <li>JWT Authentication</li>
                       <li>bcrypt</li>
+                      <li>Multer</li>
                     </ul>
                   </dd>
                 </div>
@@ -391,6 +406,7 @@
             </div>
           </article>
 
+          <!-- PROJECT: CLOUD INFRASTRUCTURE PROJECT -->
           <article class="project-card project-card--featured project-card--reverse">
             <a class="project-card__visual project-card__visual--video"
               href="https://www.youtube.com/watch?v=VfKgAgI_g6I" target="_blank" rel="noreferrer"
@@ -480,8 +496,12 @@
               </div>
             </div>
           </article>
+
         </div>
 
+        <!-- ############################################################# -->
+        <!-- COLLABORATIVE PROJECTS SECTION -->
+        <!-- ############################################################# -->
         <div class="additional-projects__heading">
           <div>
             <p class="section-kicker">Collaborative Projects</p>
@@ -494,6 +514,8 @@
         </div>
 
         <div class="additional-projects">
+
+          <!-- PROJECT: ACCOUNTAPAIR -->
           <article class="compact-project">
             <a class="compact-project__visual" href="https://www.youtube.com/watch?v=2jly9NNo-6E" target="_blank"
               rel="noreferrer" aria-label="Watch the AccountaPair demo on YouTube">
@@ -514,7 +536,7 @@
                 skillsets and practice skills through various challenges.
               </p>
               <ul class="technology-list technology-list--compact">
-                <li>React</li>
+                <li>React.js</li>
                 <li>JavaScript</li>
                 <li>Firebase</li>
                 <li>CSS</li>
@@ -529,6 +551,7 @@
             </div>
           </article>
 
+          <!-- PROJECT: CHEF-DOJO RECIPE APP -->
           <article class="compact-project">
             <a class="compact-project__visual" href="https://www.youtube.com/watch?v=aF0RZPqcsPo" target="_blank"
               rel="noreferrer" aria-label="Watch the Chef-Dojo Recipe App demo on YouTube">
@@ -551,7 +574,7 @@
                 <li>SQLAlchemy</li>
                 <li>Flask</li>
                 <li>Python</li>
-                <li>React</li>
+                <li>React.js</li>
                 <li>JavaScript</li>
                 <li>Bootstrap</li>
                 <li>CSS</li>
@@ -566,10 +589,16 @@
               </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- ############################################################# -->
+    <!-- CONTACT ME SECTION -->
+    <!-- ############################################################# -->
+
+    <!-- CONTACT INFORMATION -->
     <section id="contactme" class="contact-section" aria-labelledby="contact-title">
       <div class="contact-section__glow" aria-hidden="true"></div>
       <div class="contact-shell">
@@ -596,6 +625,7 @@
           </a>
         </div>
 
+        <!-- CONTACT FORM -->
         <div class="contact-panel">
           <form id="contact-form" class="contact-form">
             <div class="form-field">
@@ -631,6 +661,9 @@
     </section>
   </main>
 
+  <!-- ############################################################# -->
+  <!-- FOOTER -->
+  <!-- ############################################################# -->
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div class="footer-identity">
@@ -658,7 +691,10 @@
       <p>© <span id="current-year">2026</span> T. Truitt Janney</p>
     </div>
   </footer>
+
+  <!-- ############################################################# -->
   <!-- SCRIPTS -->
+  <!-- ############################################################# -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
